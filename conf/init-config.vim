@@ -24,27 +24,26 @@ set backup
 set writebackup
 
 " 确保备份文件夹存在
-if !isdirectory('~/.vim/backupdir')
-  silent! call mkdir(expand('~/.vim/backupdir'), "p", 0755)
+if !isdirectory('~/.vim/dirs/backupdir')
+  silent! call mkdir(expand('~/.vim/dirs/backupdir'), "p", 0755)
 endif
 
 " 备份文件地址 统一管理
-set backupdir=~/.vim/backupdir
+set backupdir=~/.vim/dirs/backupdir
 
 " 备份文件扩展名
 set backupext=.bak
 
-
 " 禁用交换文件
 set swapfile
 
-" 确保备份文件夹存在
-if !isdirectory('~/.vim/swapdir')
-  silent! call mkdir(expand('~/.vim/swapdir'), "p", 0755)
+" 确保交换文件夹存在
+if !isdirectory('~/.vim/dirs/swapdir')
+  silent! call mkdir(expand('~/.vim/dirs/swapdir'), "p", 0755)
 endif
 
 " 设置交换文件地址
-set directory^=~/.vim/swapdir
+set directory^=~/.vim/dirs/swapdir
 
 " 1}}}
 
@@ -62,42 +61,5 @@ if !exists(":DiffChanged")
   command DiffChanged vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
     \ | wincmd p | diffthis
 endif
-
-" 1}}}
-
-
-"--------------------------------------------------------------------------------
-" 文件类型微调 {{{1
-"--------------------------------------------------------------------------------
-augroup InitFileTypesGroup
-  " 清除同组的历史 autocommand
-  au!
-
-  " C/C++ 文件使用 // 作为注释
-  au FileType c,cpp setlocal commentstring=//\ %s
-
-  " markdown 允许自动换行
-  au FileType markdown setlocal wrap
-
-  " lisp 进行微调
-  au FileType lisp setlocal ts=8 sts=2 sw=2 et
-
-  " scala 微调
-  au FileType scala setlocal sts=4 sw=4 noet
-
-  " haskell 进行微调
-  au FileType haskell setlocal et
-
-  " quickfix 隐藏行号
-  au FileType qf setlocal nonumber
-
-  " 强制对某些扩展名的 filetype 进行纠正
-  au BufNewFile,BufRead *.as setlocal filetype=actionscript
-  au BufNewFile,BufRead *.pro setlocal filetype=prolog
-  au BufNewFile,BufRead *.es setlocal filetype=erlang
-  au BufNewFile,BufRead *.asc setlocal filetype=asciidoc
-  au BufNewFile,BufRead *.vl setlocal filetype=verilog
-
-augroup END
 
 " 1}}}

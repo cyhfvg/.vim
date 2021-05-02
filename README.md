@@ -11,3 +11,9 @@ git submoudle add git@github.com:dense-analysis/ale.git pack/mypackage/start/ale
 ```bash
 git submodule update --recursive --remote
 ```
+### 迁移配置
+
+```bash
+cd ~/.vim
+git clone --recursive git@github.com:cyhfvg/.vim.git
+```
