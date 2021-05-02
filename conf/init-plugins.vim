@@ -2,30 +2,14 @@
 " init-plugins.vim - 插件
 "================================================================================
 
-"--------------------------------------------------------------------------------
-" 计算当前 vim-init 的子路径 {{{1
-"--------------------------------------------------------------------------------
-
-let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
-
-function! s:path(path)
-  let path = expand(s:home . '/' . a:path)
-  return substitute(path, '\\', '/', 'g')
-endfunc
-
-" 1}}}
-
-"--------------------------------------------------------------------------------
-" 默认插件 {{{1
-"--------------------------------------------------------------------------------
-
+"easymotion/vim-easymotion {{{2
 " 全文快速移动，<leader><leader>f{char} 即可触发
-"! Plug 'easymotion/vim-easymotion'
+map <Leader><Leader> <Plug>(easymotion-prefix)
+" 2}}}
 
-"* 对齐插件，:'<,'>Tabularize /{pattern}
-"! Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
-
-" 1}}}
+"godlygeek/tabular {{{2
+"对齐插件，:'<,'>Tabularize /{pattern}
+" 2}}}
 
 "chrisbra/vim-diff-enhanced {{{2
 " Diff 增强，支持 histogram / patience 等更科学的 diff 算法
@@ -124,7 +108,6 @@ let g:echodoc#enable_at_startup = 1
 " 一次性安装一大堆 colorscheme
 " 2}}}
 
-
 "ctrlpvim/ctrlp.vim tacahiroy/ctrlp-funky{{{2
 " 使用 CtrlP 代替
 "tacahiroy/ctrlp-funky
@@ -157,7 +140,6 @@ noremap <m-p> :CtrlPFunky<cr>
 noremap <m-n> :CtrlPBuffer<cr>
 
 " 2}}}
-
 
 "mbbill/undotree {{{2
 "undotree
@@ -206,7 +188,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 " GOTO code navigation {{{3
-nmap <silent> gd <Plug>(coc-definition)
+"nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
