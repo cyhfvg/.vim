@@ -96,7 +96,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_powerline_fonts = 0
 let g:airline_exclude_preview = 1
 let g:airline_section_b = '%n'
-let g:airline_theme='space-vim-dark'
+let g:airline_theme='molokai'
 let g:airline#extensions#branch#enabled = 0
 let g:airline#extensions#syntastic#enabled = 0
 let g:airline#extensions#fugitiveline#enabled = 0
@@ -122,7 +122,6 @@ let g:echodoc#enable_at_startup = 1
 
 "flazz/vim-colorschemes {{{2
 " 一次性安装一大堆 colorscheme
-packadd! vim-colorschemes
 " 2}}}
 
 
