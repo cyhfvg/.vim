@@ -34,7 +34,7 @@ set backupdir=~/.vim/dirs/backupdir
 " 备份文件扩展名
 set backupext=.bak
 
-" 禁用交换文件
+" 启用交换文件
 set swapfile
 
 " 确保交换文件夹存在

@@ -30,24 +30,24 @@ set runtimepath+=~/.vim
 " ==============================================================================
 
 "* 加载基础配置
-LoadConfig init/init-basic.vim
+LoadConfig conf/init-basic.vim
 
 " 加载扩展配置
-LoadConfig init/init-config.vim
+LoadConfig conf/init-config.vim
 
 " 设置 tabsize
-LoadConfig init/init-tabsize.vim
+LoadConfig conf/init-tabsize.vim
 
 "* 插件加载
-LoadConfig init/init-plugins.vim
+LoadConfig conf/init-plugins.vim
 
 " 界面样式
- LoadConfig init/init-style.vim
+ LoadConfig conf/init-style.vim
 
 "* 自定义按键
-LoadConfig init/init-keymaps.vim
+LoadConfig conf/init-keymaps.vim
 
 " 宏定义
-LoadConfig init/init-macros.vim
+LoadConfig conf/init-macros.vim
 
 " 1}}}
