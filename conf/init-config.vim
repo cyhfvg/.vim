@@ -24,12 +24,13 @@ set backup
 set writebackup
 
 " 确保备份文件夹存在
-if !isdirectory('~/.vim/dirs/backupdir')
-  silent! call mkdir(expand('~/.vim/dirs/backupdir'), "p", 0755)
+let s:backupdir = g:vimfilehome .'/'.'dirs/backupdir'
+if !isdirectory(s:backupdir)
+  silent! call mkdir(expand(s:backupdir), "p", 0755)
 endif
 
 " 备份文件地址 统一管理
-set backupdir=~/.vim/dirs/backupdir
+let &backupdir=s:backupdir
 
 " 备份文件扩展名
 set backupext=.bak
@@ -38,12 +39,13 @@ set backupext=.bak
 set swapfile
 
 " 确保交换文件夹存在
-if !isdirectory('~/.vim/dirs/swapdir')
-  silent! call mkdir(expand('~/.vim/dirs/swapdir'), "p", 0755)
+let s:swapdir = g:vimfilehome .'/'.'dirs/swapdir'
+if !isdirectory(s:swapdir)
+  silent! call mkdir(expand(s:swapdir), "p", 0755)
 endif
 
 " 设置交换文件地址
-set directory^=~/.vim/dirs/swapdir
+let &directory=s:swapdir .','.&directory
 
 " 1}}}
 

@@ -12,15 +12,15 @@ else
 endif
 
 " 取得当前目录
-let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+let g:vimfilehome = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
 " 定义一个命令用来加载文件
-command! -nargs=1 LoadConfig exec 'source '.s:home .'/'.'<args>'
+command! -nargs=1 LoadConfig exec 'source '.g:vimfilehome .'/'.'<args>'
 
 " 将目录加入 runtimepath
-exec 'set runtimepath+=' .s:home
+exec 'set runtimepath+=' .g:vimfilehome
 " 将目录加入 packpath
-exec 'set packpath+=' .s:home
+exec 'set packpath+=' .g:vimfilehome
 
 " 确保 ~/.vim 目录加入 runtimepath
 set runtimepath+=~/.vim
