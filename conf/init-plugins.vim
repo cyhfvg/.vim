@@ -273,3 +273,11 @@ augroup end
 "junegunn/fzf {{{2
 "快速文件搜索
 " 2}}}
+
+"Yggdroot/indentLine {{{2
+"缩进线指示
+" 禁用颜色=>使用主题的配色
+"let g:indentLine_setColors = 0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+nnoremap <silent> <leader>i :IndentLinesToggle<cr>
+" 2}}}

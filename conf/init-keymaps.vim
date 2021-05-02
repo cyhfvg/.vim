@@ -160,6 +160,7 @@ endif
 " F5 运行当前文件 {{{1
 " 根据文件类型判断方法，并且输出到 quickfix 窗口
 "----------------------------------------------------------------------
+noremap <silent><F5> :ExecuteFile()<cr>
 function! ExecuteFile()
   let cmd = ''
   if index(['c', 'cpp', 'rs', 'go'], &ft) >= 0
