@@ -2,7 +2,6 @@
 " init-keymaps.vim - 快捷键设置
 "================================================================================
 
-
 "----------------------------------------------------------------------
 " 设置 CTRL+HJKL 移动光标 {{{1
 "----------------------------------------------------------------------
@@ -82,7 +81,6 @@ noremap <silent> <leader>bp :bp<cr>
 
 " 1}}}
 
-
 "----------------------------------------------------------------------
 " TAB 标签页 {{{1
 " 创建，关闭，上一个，下一个，左移，右移
@@ -153,13 +151,6 @@ if has('terminal') && exists(':terminal') == 2 && has('patch-8.1.1')
   tnoremap <m-L> <c-_>l
   tnoremap <m-J> <c-_>j
   tnoremap <m-K> <c-_>k
-  tnoremap <m-q> <c-\><c-n>
-elseif has('nvim')
-  " neovim 没有 termwinkey 支持，必须把 terminal 切换回 normal 模式
-  tnoremap <m-H> <c-\><c-n><c-w>h
-  tnoremap <m-L> <c-\><c-n><c-w>l
-  tnoremap <m-J> <c-\><c-n><c-w>j
-  tnoremap <m-K> <c-\><c-n><c-w>k
   tnoremap <m-q> <c-\><c-n>
 endif
 
