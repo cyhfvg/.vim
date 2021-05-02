@@ -1,10 +1,10 @@
 # .vim
 my-vim8-package-manager
 
-### 添加第三方插件
+### 添加插件
 ```bash
 cd ~/.vim
-git submoudle add git@github.com:dense-analysis/ale.git pack/mypackage/start/ale
+git submoudle add git@github.com:{username}/{packagename}.git pack/mypackage/start/{packagename}
 ```
 
 ### 升级所有插件
