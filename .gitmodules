@@ -67,3 +67,6 @@
 [submodule "pack/mypackage/start/fzf"]
 	path = pack/mypackage/start/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule "colors"]
+	path = colors
+	url = git@github.com:flazz/vim-colorschemes.git
