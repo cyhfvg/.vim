@@ -19,6 +19,8 @@ command! -nargs=1 LoadConfig exec 'source '.s:home .'/'.'<args>'
 
 " 将目录加入 runtimepath
 exec 'set runtimepath+=' .s:home
+" 将目录加入 packpath
+exec 'set packpath+=' .s:home
 
 " 确保 ~/.vim 目录加入 runtimepath
 set runtimepath+=~/.vim
