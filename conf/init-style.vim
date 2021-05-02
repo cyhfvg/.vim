@@ -53,7 +53,7 @@ set background=dark
 set t_Co=256
 
 " 设置主题
-color onedark
+color space-vim-dark
 
 " 1}}}
 
