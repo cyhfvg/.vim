@@ -165,11 +165,11 @@ noremap <m-n> :CtrlPBuffer<cr>
 nnoremap <silent> <leader>u :UndotreeToggle<cr>
 " persistent_undo
 if has("persistent_undo")
-  let target_path = expand('~/.vim/dirs/undodir')
+  let target_path = expand(g:vimfilehome .'/'.'dirs/undodir')
   " create the directory and any parent directories
   " if the location does not exist.
   if !isdirectory(target_path)
-    call mkdir(target_path, "p", 0700)
+    call mkdir(target_path, "p", 0755)
   endif
   let &undodir=target_path
   set undofile
