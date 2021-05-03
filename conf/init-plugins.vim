@@ -80,7 +80,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_powerline_fonts = 0
 let g:airline_exclude_preview = 1
 let g:airline_section_b = '%n'
-let g:airline_theme='molokai'
+let g:airline_theme='solarized'
 let g:airline#extensions#branch#enabled = 0
 let g:airline#extensions#syntastic#enabled = 0
 let g:airline#extensions#fugitiveline#enabled = 0
@@ -166,14 +166,6 @@ set updatetime=300
 
 " 自动完成提示框中不跳过信息
 set shortmess+=c
-
-" 符号列
-if has("patch-8.1.1564")
-  " 版本大于 8.1.1564 ，允许符号列与数字列合并
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
 
 " 一段时间(updatetime)内光标不移动，高亮光标下的变量及其引用
 "autocmd CursorHold * silent call CocActionAsync('highlight')
