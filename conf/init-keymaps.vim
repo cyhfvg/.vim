@@ -160,6 +160,8 @@ endif
 " F5 运行当前文件 {{{1
 " 根据文件类型判断方法，并且输出到 quickfix 窗口
 "----------------------------------------------------------------------
+noremap <silent><F5> :call ExecuteFile()<cr>
+
 function! ExecuteFile()
   let cmd = ''
   if index(['c', 'cpp', 'rs', 'go'], &ft) >= 0
@@ -169,7 +171,7 @@ function! ExecuteFile()
     let cmd = '"$(VIM_FILEDIR)/$(VIM_FILENOEXT)"'
   elseif &ft == 'python'
     let $PYTHONUNBUFFERED=1 " 关闭 python 缓存，实时看到输出
-    let cmd = 'python "$(VIM_FILEPATH)"'
+    let cmd = '!python %'
   elseif &ft == 'javascript'
     let cmd = 'node "$(VIM_FILEPATH)"'
   elseif &ft == 'perl'
@@ -191,15 +193,8 @@ function! ExecuteFile()
   else
     return
   endif
-  " Windows 下打开新的窗口 (-mode=4) 运行程序，其他系统在 quickfix 运行
-  " -raw: 输出内容直接显示到 quickfix window 不匹配 errorformat
-  " -save=2: 保存所有改动过的文件
-  " -cwd=$(VIM_FILEDIR): 运行初始化目录为文件所在目录
-  if has('win32') || has('win64')
-    exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=4 '. cmd
-  else
-    exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=0 '. cmd
-  endif
+
+  exec cmd
 endfunc
 
 " 1}}}
