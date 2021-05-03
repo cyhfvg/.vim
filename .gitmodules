@@ -1,75 +1,78 @@
-[submodule "pack/mypackage/start/vim-easymotion"]
-	path = pack/mypackage/start/vim-easymotion
+[submodule "pack/mypackage/opt/vim-easymotion"]
+	path = pack/mypackage/opt/vim-easymotion
 	url = git@github.com:easymotion/vim-easymotion.git
-[submodule "pack/mypackage/start/tabular"]
-	path = pack/mypackage/start/tabular
+[submodule "pack/mypackage/opt/tabular"]
+	path = pack/mypackage/opt/tabular
 	url = git@github.com:godlygeek/tabular.git
-[submodule "pack/mypackage/start/vim-misc"]
-	path = pack/mypackage/start/vim-misc
+[submodule "pack/mypackage/opt/vim-diff-enhanced"]
+	path = pack/mypackage/opt/vim-diff-enhanced
+	url = git@github.com:chrisbra/vim-diff-enhanced.git
+[submodule "pack/mypackage/opt/vim-misc"]
+	path = pack/mypackage/opt/vim-misc
 	url = git@github.com:xolox/vim-misc.git
-[submodule "pack/mypackage/start/vim-signature"]
-	path = pack/mypackage/start/vim-signature
+[submodule "pack/mypackage/opt/vim-signature"]
+	path = pack/mypackage/opt/vim-signature
 	url = git@github.com:kshenoy/vim-signature.git
-[submodule "pack/mypackage/start/vim-signify"]
-	path = pack/mypackage/start/vim-signify
+[submodule "pack/mypackage/opt/vim-signify"]
+	path = pack/mypackage/opt/vim-signify
 	url = git@github.com:mhinz/vim-signify.git
-[submodule "pack/mypackage/start/vim-fugitive"]
-	path = pack/mypackage/start/vim-fugitive
+[submodule "pack/mypackage/opt/vim-fugitive"]
+	path = pack/mypackage/opt/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule "pack/mypackage/start/vim-dict"]
-	path = pack/mypackage/start/vim-dict
+[submodule "pack/mypackage/opt/vim-dict"]
+	path = pack/mypackage/opt/vim-dict
 	url = git@github.com:asins/vim-dict.git
-[submodule "pack/mypackage/start/vim-textobj-user"]
-	path = pack/mypackage/start/vim-textobj-user
+[submodule "pack/mypackage/opt/vim-textobj-user"]
+	path = pack/mypackage/opt/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
-[submodule "pack/mypackage/start/vim-textobj-indent"]
-	path = pack/mypackage/start/vim-textobj-indent
+[submodule "pack/mypackage/opt/vim-textobj-indent"]
+	path = pack/mypackage/opt/vim-textobj-indent
 	url = git@github.com:kana/vim-textobj-indent.git
-[submodule "pack/mypackage/start/vim-textobj-syntax"]
-	path = pack/mypackage/start/vim-textobj-syntax
+[submodule "pack/mypackage/opt/vim-textobj-syntax"]
+	path = pack/mypackage/opt/vim-textobj-syntax
 	url = git@github.com:kana/vim-textobj-syntax.git
-[submodule "pack/mypackage/start/vim-textobj-parameter"]
-	path = pack/mypackage/start/vim-textobj-parameter
+[submodule "pack/mypackage/opt/vim-textobj-parameter"]
+	path = pack/mypackage/opt/vim-textobj-parameter
 	url = git@github.com:sgur/vim-textobj-parameter.git
-[submodule "pack/mypackage/start/vim-textobj-uri"]
-	path = pack/mypackage/start/vim-textobj-uri
+[submodule "pack/mypackage/opt/vim-textobj-uri"]
+	path = pack/mypackage/opt/vim-textobj-uri
 	url = git@github.com:jceb/vim-textobj-uri.git
-[submodule "pack/mypackage/start/vim-polyglot"]
-	path = pack/mypackage/start/vim-polyglot
+[submodule "pack/mypackage/opt/vim-polyglot"]
+	path = pack/mypackage/opt/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
-[submodule "pack/mypackage/start/vim-airline"]
-	path = pack/mypackage/start/vim-airline
+[submodule "pack/mypackage/opt/vim-airline"]
+	path = pack/mypackage/opt/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
-[submodule "pack/mypackage/start/vim-airline-themes"]
-	path = pack/mypackage/start/vim-airline-themes
+[submodule "pack/mypackage/opt/vim-airline-themes"]
+	path = pack/mypackage/opt/vim-airline-themes
 	url = git@github.com:vim-airline/vim-airline-themes.git
-[submodule "pack/mypackage/start/nerdtree"]
-	path = pack/mypackage/start/nerdtree
+[submodule "pack/mypackage/opt/nerdtree"]
+	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/mypackage/start/vim-nerdtree-syntax-highlight"]
-	path = pack/mypackage/start/vim-nerdtree-syntax-highlight
+[submodule "pack/mypackage/opt/vim-nerdtree-syntax-highlight"]
+	path = pack/mypackage/opt/vim-nerdtree-syntax-highlight
 	url = git@github.com:tiagofumo/vim-nerdtree-syntax-highlight.git
-[submodule "pack/mypackage/start/echodoc.vim"]
-	path = pack/mypackage/start/echodoc.vim
+[submodule "pack/mypackage/opt/echodoc.vim"]
+	path = pack/mypackage/opt/echodoc.vim
 	url = git@github.com:Shougo/echodoc.vim.git
-[submodule "pack/mypackage/start/ctrlp.vim"]
-	path = pack/mypackage/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "pack/mypackage/start/ctrlp-funky"]
-	path = pack/mypackage/start/ctrlp-funky
-	url = git@github.com:tacahiroy/ctrlp-funky.git
-[submodule "pack/mypackage/start/undotree"]
-	path = pack/mypackage/start/undotree
-	url = git@github.com:mbbill/undotree.git
-[submodule "pack/mypackage/start/coc.nvim"]
-	path = pack/mypackage/start/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git
-[submodule "pack/mypackage/start/fzf"]
-	path = pack/mypackage/start/fzf
-	url = git@github.com:junegunn/fzf.git
-[submodule "pack/mypackage/start/vim-colorschemes"]
-	path = pack/mypackage/start/vim-colorschemes
+[submodule "pack/mypackage/opt/vim-colorschemes"]
+	path = pack/mypackage/opt/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
-[submodule "pack/mypackage/start/indentLine"]
-	path = pack/mypackage/start/indentLine
+[submodule "pack/mypackage/opt/ctrlp.vim"]
+	path = pack/mypackage/opt/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "pack/mypackage/opt/ctrlp-funky"]
+	path = pack/mypackage/opt/ctrlp-funky
+	url = git@github.com:tacahiroy/ctrlp-funky.git
+[submodule "pack/mypackage/opt/undotree"]
+	path = pack/mypackage/opt/undotree
+	url = git@github.com:mbbill/undotree.git
+[submodule "pack/mypackage/opt/coc.nvim"]
+	path = pack/mypackage/opt/coc.nvim
+	url = git@github.com:neoclide/coc.nvim.git
+[submodule "pack/mypackage/opt/indentLine"]
+	path = pack/mypackage/opt/indentLine
 	url = git@github.com:Yggdroot/indentLine.git
+[submodule "pack/mypackage/opt/fzf"]
+	path = pack/mypackage/opt/fzf
+	url = git@github.com:junegunn/fzf.git
