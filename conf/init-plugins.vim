@@ -2,6 +2,36 @@
 " init-plugins.vim - 插件
 "================================================================================
 
+"plugin enable/disable {{{1
+" packadd
+packadd vim-easymotion
+"packadd tabular
+packadd vim-diff-enhanced
+packadd vim-misc
+packadd vim-signature
+packadd vim-signify
+packadd vim-fugitive
+"packadd vim-dict
+packadd vim-textobj-user
+packadd vim-textobj-indent
+"packadd vim-textobj-syntax
+"packadd vim-textobj-parameter
+packadd vim-textobj-uri
+"packadd vim-polyglot
+packadd vim-airline
+packadd vim-airline-themes
+packadd nerdtree
+"packadd vim-nerdtree-syntax-highlight
+"packadd echodoc.vim
+packadd vim-colorschemes
+packadd ctrlp.vim
+"packadd ctrlp-funky
+packadd undotree
+"packadd coc.nvim
+"packadd fzf
+"packadd indentLine
+" 1}}}
+
 "easymotion/vim-easymotion {{{2
 " 全文快速移动，<leader><leader>f{char} 即可触发
 map <Leader><Leader> <Plug>(easymotion-prefix)
