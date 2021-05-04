@@ -225,7 +225,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 "}}}3
 
 " function 文本对象 {{{3
-" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server
 xmap if <Plug>(coc-funcobj-i)
 omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)

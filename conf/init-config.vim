@@ -55,8 +55,8 @@ let &directory=s:swapdir .','.&directory
 
 " 打开文件时恢复上一次光标所在位置
 autocmd BufReadPost *
-  \ if line("'\"") > 1 && line("'\"") <= line("$") | 
-  \   exe "normal! g`\"" | 
+  \ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
   \ endif
 
 if !exists(":DiffChanged")

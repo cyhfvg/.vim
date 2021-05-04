@@ -19,7 +19,7 @@ set backspace=eol,start,indent
 " 自动缩进
 set autoindent
 
-" Windows 禁用 ALT 操作菜单 
+" Windows 禁用 ALT 操作菜单
 " 使得可以自定义 ALT 的快捷键而不会与 Windows快捷键冲突
 set winaltkeys=no
 
