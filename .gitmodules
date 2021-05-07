@@ -76,3 +76,12 @@
 [submodule "pack/mypackage/opt/fzf"]
 	path = pack/mypackage/opt/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule "pack/mypackage/opt/vim-gutentags"]
+	path = pack/mypackage/opt/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
+[submodule "pack/mypackage/opt/gutentags_plus"]
+	path = pack/mypackage/opt/gutentags_plus
+	url = git@github.com:skywind3000/gutentags_plus.git
+[submodule "pack/mypackage/opt/vim-preview"]
+	path = pack/mypackage/opt/vim-preview
+	url = git@github.com:skywind3000/vim-preview.git
