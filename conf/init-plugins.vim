@@ -79,13 +79,13 @@ if index(g:plugin_group, 'backup') >= 0
   nnoremap <silent> <leader>u :UndotreeToggle<cr>
   " persistent_undo
   if has("persistent_undo")
-    let undo_path = expand(g:vimfilehome .'/'.'dirs/undodir')
+    let s:undo_path = expand(g:vimfilehome .'/'.'dirs/undodir')
     " create the directory and any parent directories
     " if the location does not exist.
-    if !isdirectory(undo_path)
-      call mkdir(undo_path, "p", 0755)
+    if !isdirectory(s:undo_path)
+      call mkdir(s:undo_path, "p", 0755)
     endif
-    let &undodir=undo_path
+    let &undodir=s:undo_path
     set undofile
   endif
   " 2}}}
@@ -307,11 +307,11 @@ if index(g:plugin_group, 'style') >= 0
 
   "Yggdroot/indentLine {{{2
   "缩进线指示
-  packadd indentLine
+"  packadd indentLine
   " 禁用颜色=>使用主题的配色
-  "let g:indentLine_setColors = 0
-  let g:indentLine_char_list = ['¦', '|', '┆', '┊']
-  nnoremap <silent> <leader>i :IndentLinesToggle<cr>
+"  let g:indentLine_setColors = 0
+"  let g:indentLine_char_list = ['¦', '┆', '┊']
+"  nnoremap <silent> <leader>i :IndentLinesToggle<cr>
   " 2}}}
 endif
 "==============================================================================
@@ -324,15 +324,16 @@ if index(g:plugin_group, 'tags') >= 0
   packadd gutentags_plus
 
   " 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
-  let g:gutentags_project_root = ['.root']
+  let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+  " 设定所生成的数据文件的名称
   let g:gutentags_ctags_tagfile = '.tags'
 
   " 默认生成的数据文件集中到 vimfilehome/dirs/tag 避免污染项目目录，好清理
-  let tag_path = expand(g:vimfilehome .'/'.'dirs/tagdir')
-  if !isdirectory(tag_path)
-    call mkdir(tag_path, "p", 0755)
+  let s:tag_path = expand(g:vimfilehome .'/'.'dirs/tagdir')
+  if !isdirectory(s:tag_path)
+    call mkdir(s:tag_path, "p", 0755)
   endif
-  let g:gutentags_cache_dir = expand(tag_path)
+  let g:gutentags_cache_dir = expand(s:tag_path)
 
   " 默认禁用自动生成
   let g:gutentags_modules = []
@@ -350,16 +351,34 @@ if index(g:plugin_group, 'tags') >= 0
   " 设置 ctags 的参数
   let g:gutentags_ctags_extra_args = []
   let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-  let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
+  let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
   let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
   " 禁止 gutentags 自动链接 gtags 数据库
   let g:gutentags_auto_add_gtags_cscope = 0
   " 2}}}
+
   "skywind3000/vim-preview {{{2
   " 提供基于 TAGS 的定义预览，函数参数预览，quickfix 预览
   packadd vim-preview
   "2}}}
+
+  "vim-scripts/taglist.vim {{{2
+  packadd taglist.vim
+
+  "不同时显示多个文件的tag,只显示当前文件的tag
+  let Tlist_Show_One_File = 1
+
+  "如果taglist窗口是最后一个窗口，则退出vim
+  let Tlist_Exit_OnlyWindow = 1
+
+  "在右侧窗口中显示taglist窗口
+  let Tlist_Use_Right_Window = 1
+
+  nnoremap <silent> <leader>t :TlistToggle<cr>
+
+  "2}}}
+
 endif
 "==============================================================================
 if index(g:plugin_group, 'textobj') >= 0
