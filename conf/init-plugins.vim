@@ -1,18 +1,19 @@
-"================================================================================
+"==============================================================================
 " init-plugins.vim - 插件
-"================================================================================
+"==============================================================================
 
 " plugin group 分组
 if !exists('g:plugin_group')
   let g:plugin_group = []
-  let g:plugin_group += ['fuzzy']
   let g:plugin_group += ['backup']
   let g:plugin_group += ['basic']
   let g:plugin_group += ['complete']
   let g:plugin_group += ['enhanced']
   let g:plugin_group += ['filetype']
   let g:plugin_group += ['format']
+  let g:plugin_group += ['fuzzy']
   let g:plugin_group += ['git']
+  let g:plugin_group += ['markdown']
   let g:plugin_group += ['marks']
   let g:plugin_group += ['style']
   let g:plugin_group += ['tags']
@@ -230,12 +231,12 @@ if index(g:plugin_group, 'enhanced') >= 0
   packadd vim-misc
   " 2}}}
 
-"Shougo/echodoc.vim {{{2
-" echodoc：在底部显示函数参数
-packadd echodoc.vim
-set noshowmode
-let g:echodoc#enable_at_startup = 1
-" 2}}}
+  "Shougo/echodoc.vim {{{2
+  " echodoc：在底部显示函数参数
+  packadd echodoc.vim
+  set noshowmode
+  let g:echodoc#enable_at_startup = 1
+  " 2}}}
 
 endif
 "==============================================================================
@@ -269,6 +270,36 @@ if index(g:plugin_group, 'git') >= 0
   "tpope/vim-fugitive {{{2
   " Git 支持
   packadd vim-fugitive
+  " 2}}}
+endif
+"==============================================================================
+if index(g:plugin_group, 'markdown') >= 0
+  "plasticboy/vim-markdown {{{2
+  "markdown 高亮,语法
+  "依赖于tabular 确保tabular启动于vim-markdown之前
+  packadd tabular
+  packadd vim-markdown
+  " 2}}}
+
+  "mzlogin/vim-markdown-toc {{{2
+  "生成markdown目录
+  packadd vim-markdown-toc
+  " 使用命令 {{{3
+  " 在当前光标后生成目录
+  " :GenTocMarked
+  " 更新目录
+  " :UpdateToc
+  "  3}}}
+  "取消存储时自动更新目录
+  let g:vmt_auto_update_on_save = 0
+  " 2}}}
+  "iamcco/markdown-preview.nvim {{{2
+  " 手动至markdown-preview.nvim/app目录下安装nodejs依赖`yarn install`
+  packadd markdown-preview.nvim
+  " 指定浏览器路径
+  let g:mkdp_path_to_chrome = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+  " 打开/关闭预览
+  nnoremap <silent> <leader>mv :MarkdownPreviewToggle<cr>
   " 2}}}
 endif
 "==============================================================================
@@ -325,6 +356,9 @@ if index(g:plugin_group, 'tags') >= 0
   " 提供 GscopeFind 命令并自动处理好 gtags 数据库切换
   " 支持光标移动到符号名上：<leader>cg 查看定义，<leader>cs 查看引用
   packadd gutentags_plus
+
+  "debug
+  "let g:gutentags_trace = 1
 
   " 设定项目目录标志：除了 .git/.svn 外，还有 .root 文件
   let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
