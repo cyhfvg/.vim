@@ -21,7 +21,7 @@ set softtabstop=4
 augroup PythonTab
   au!
   " 需要在python中使用tab缩进时 使用下面的设置
-  au FileType python setlocal shiftwidth=2 tabstop=2 expandtab
+  au FileType python setlocal shiftwidth=4 tabstop=4 expandtab
 augroup End
 
 augroup VimLTab
