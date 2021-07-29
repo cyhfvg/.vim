@@ -49,8 +49,12 @@ set shortmess=atI
 " 允许 256 色
 set t_Co=256
 
+"set background=light
+
 " 设置主题
-color solarized8_light_high
+"color solarized8_light_high
+"color hybrid_reverse
+color molokai
 
 " 1}}}
 

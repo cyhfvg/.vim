@@ -18,6 +18,7 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['style']
   let g:plugin_group += ['tags']
   let g:plugin_group += ['textobj']
+  let g:plugin_group += ['debug']
 endif
 "==============================================================================
 if index(g:plugin_group, 'fuzzy') >= 0
@@ -255,6 +256,7 @@ if index(g:plugin_group, 'format') >= 0
 endif
 "==============================================================================
 if index(g:plugin_group, 'git') >= 0
+      \&& executable('git')
   "mhinz/vim-signify {{{2
   " 用于在侧边符号栏显示 git/svn 的 diff
   " signify 调优
@@ -434,6 +436,14 @@ if index(g:plugin_group, 'textobj') >= 0
   " 提供 uri/url 的文本对象，iu / au 表示
   packadd vim-textobj-uri
   " 2}}}
+endif
+"==============================================================================
+
+"==============================================================================
+if index(g:plugin_group, 'textobj') >= 0
+  "gotcha/ipdb.git
+  "python debuger
+  packadd ipdb
 endif
 "==============================================================================
 
