@@ -440,10 +440,12 @@ endif
 "==============================================================================
 
 "==============================================================================
-if index(g:plugin_group, 'textobj') >= 0
+if index(g:plugin_group, 'debug') >= 0
   "gotcha/ipdb.git
   "python debuger
   packadd ipdb
+  "vim-vdebug/vdebug
+  "vim debuger
+  "packadd vdebug
 endif
 "==============================================================================
-
