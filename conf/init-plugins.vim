@@ -319,26 +319,10 @@ if index(g:plugin_group, 'style') >= 0
   packadd vim-colorschemes
   " 2}}}
 
-  "airline {{{2
-  "vim-airline/vim-airline
-  "vim-airline/vim-airline-themes
-  packadd vim-airline
-  packadd vim-airline-themes
-
-  let g:airline_left_sep = ''
-  let g:airline_left_alt_sep = ''
-  let g:airline_right_sep = ''
-  let g:airline_right_alt_sep = ''
-  let g:airline_powerline_fonts = 0
-  let g:airline_exclude_preview = 1
-  let g:airline_section_b = '%n'
-  let g:airline_theme='solarized'
-  let g:airline#extensions#branch#enabled = 0
-  let g:airline#extensions#syntastic#enabled = 0
-  let g:airline#extensions#fugitiveline#enabled = 0
-  let g:airline#extensions#csv#enabled = 0
-  let g:airline#extensions#vimagit#enabled = 0
-  " 2}}}
+  packadd lightline.vim
+  let g:lightline = {
+        \ 'colorscheme': 'molokai',
+        \ }
 
   "Yggdroot/indentLine {{{2
   "缩进线指示

@@ -40,12 +40,6 @@
 [submodule "pack/mypackage/opt/vim-polyglot"]
 	path = pack/mypackage/opt/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
-[submodule "pack/mypackage/opt/vim-airline"]
-	path = pack/mypackage/opt/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
-[submodule "pack/mypackage/opt/vim-airline-themes"]
-	path = pack/mypackage/opt/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -100,3 +94,6 @@
 [submodule "pack/mypackage/opt/ipdb"]
 	path = pack/mypackage/opt/ipdb
 	url = git@github.com:gotcha/ipdb.git
+[submodule "pack/mypackage/opt/lightline.vim"]
+	path = pack/mypackage/opt/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
