@@ -2,7 +2,7 @@
 "
 "scrooloose/nerdtree
 "tiagofumo/vim-nerdtree-syntax-highlight
-"
+"Xuyuanp/nerdtree-git-plugin
 "
 "
 
@@ -19,4 +19,5 @@ let g:NERDTreeHijackNetrw = 0
 "-------------------------------------------------------------------------------
 packadd nerdtree
 packadd vim-nerdtree-syntax-highlight
+packadd nerdtree-git-plugin
 "-------------------------------------------------------------------------------

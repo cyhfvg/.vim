@@ -7,6 +7,16 @@ else
   let s:loaded = v:true
 endif
 "-------------------------------------------------------------------------------
+
+let g:coc_global_extensions = ['coc-json'
+                              \, 'coc-git'
+                              \, 'coc-word'
+                              \, 'coc-syntax'
+                              \, 'coc-pairs'
+                              \, 'coc-highlight'
+                              \, 'coc-dictionary'
+                              \, 'coc-pyright'
+                              \ ]
 "-------------------------------------------------------------------------------
 " 给不同语言提供字典补全，插入模式下 c-x c-k 触发
 packadd vim-dict
@@ -21,11 +31,11 @@ if executable('node')
   set shortmess+=c
 
   " 一段时间(updatetime)内光标不移动，高亮光标下的变量及其引用
-  "autocmd CursorHold * silent call CocActionAsync('highlight')
+  autocmd CursorHold * silent call CocActionAsync('highlight')
 
   " 状态栏
   " NOTE: Please see `:h coc-status` for integrations with external plugins that
-  set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+  "set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
   " keymaps {{{3
 

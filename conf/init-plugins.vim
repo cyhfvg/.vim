@@ -90,6 +90,7 @@ if index(g:plugin_group, 'enhanced') >= 0
 "    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_enhanced.vim
   augroup End
 
+
 endif
 "==============================================================================
 if index(g:plugin_group, 'filetype') >= 0
@@ -139,13 +140,9 @@ if index(g:plugin_group, 'marks') >= 0
 endif
 "==============================================================================
 if index(g:plugin_group, 'style') >= 0
-  "before vim init"
-"  packadd vim-colorschemes
-  packadd lightline.vim
-  "----------------------------------------------------------------------
-  let g:lightline = {
-        \ 'colorscheme': 'molokai',
-        \ }
+
+  "init before vim open
+  LoadConfig conf/autocmd/plugin/my_plugin_style.vim
 
   augroup my_plugin_indent
     autocmd!

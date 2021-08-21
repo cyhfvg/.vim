@@ -95,3 +95,6 @@
 [submodule "pack/mypackage/opt/lightline.vim"]
 	path = pack/mypackage/opt/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git
+[submodule "pack/mypackage/opt/nerdtree-git-plugin"]
+	path = pack/mypackage/opt/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
