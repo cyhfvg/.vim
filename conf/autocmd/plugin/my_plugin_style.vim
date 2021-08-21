@@ -17,7 +17,7 @@ endif
         \    'active': {
         \      'left': [
         \          ['mode', 'paste'],
-        \          ['gitProjectStatus', 'gitBufStatus','filename'],
+        \          ['gitBufStatus','filename'],
         \          ['method' ]
         \        ],
         \      'right': [
@@ -26,7 +26,6 @@ endif
         \      },
         \    'component_function': {
         \        'gitBufStatus': 'LightlineBufGitStatus',
-        \        'gitProjectStatus': 'LightlineGlobalGitStatus'
         \      },
         \    'mode_map': {
         \        'n' : 'N',
@@ -52,10 +51,10 @@ function! LightlineBufGitStatus() abort
 endfunction
 
 "当前project的分支信息
-fu! LightlineGlobalGitStatus() abort
-  let gGitStatus = get(g:, 'coc_git_status', '')
-  return winwidth(0) > 120 ? gGitStatus : ''
-endfu
+"fu! LightlineGlobalGitStatus() abort
+"  let gGitStatus = get(g:, 'coc_git_status', '')
+"  return winwidth(0) > 120 ? gGitStatus : ''
+"endfu
 "----------------------------------------------------------------------
 packadd lightline.vim
 "----------------------------------------------------------------------
