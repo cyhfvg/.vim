@@ -49,8 +49,6 @@
 [submodule "pack/mypackage/opt/echodoc.vim"]
 	path = pack/mypackage/opt/echodoc.vim
 	url = git@github.com:Shougo/echodoc.vim.git
-[submodule "pack/mypackage/opt/vim-colorschemes"]
-	path = pack/mypackage/opt/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
 [submodule "pack/mypackage/opt/ctrlp.vim"]
 	path = pack/mypackage/opt/ctrlp.vim
