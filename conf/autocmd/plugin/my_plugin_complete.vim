@@ -7,7 +7,7 @@ else
   let s:loaded = v:true
 endif
 "-------------------------------------------------------------------------------
-
+"coc-marketplace
 let g:coc_global_extensions = ['coc-json'
                               \, 'coc-git'
                               \, 'coc-word'
@@ -16,6 +16,7 @@ let g:coc_global_extensions = ['coc-json'
                               \, 'coc-highlight'
                               \, 'coc-dictionary'
                               \, 'coc-pyright'
+                              \, 'coc-vimlsp'
                               \ ]
 "-------------------------------------------------------------------------------
 " 给不同语言提供字典补全，插入模式下 c-x c-k 触发
