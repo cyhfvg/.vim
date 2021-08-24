@@ -43,15 +43,6 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 " 禁止 gutentags 自动链接 gtags 数据库
 let g:gutentags_auto_add_gtags_cscope = 0
 " 2}}}
-
-" taglist {{{2
-"不同时显示多个文件的tag,只显示当前文件的tag
-let Tlist_Show_One_File = 1
-"如果taglist窗口是最后一个窗口，则退出vim
-let Tlist_Exit_OnlyWindow = 1
-"在右侧窗口中显示taglist窗口
-let Tlist_Use_Right_Window = 1
-"2}}}
 "-------------------------------------------------------------------------------
 packadd vim-gutentags
 " 提供 GscopeFind 命令并自动处理好 gtags 数据库切换
@@ -60,6 +51,6 @@ packadd gutentags_plus
 "skywind3000/vim-preview
 " 提供基于 TAGS 的定义预览，函数参数预览，quickfix 预览
 packadd vim-preview
-"vim-scripts/taglist.vim
-packadd taglist.vim
+"liuchengxu/vista.vim
+packadd vista.vim
 "-------------------------------------------------------------------------------

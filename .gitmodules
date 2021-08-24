@@ -98,3 +98,6 @@
 [submodule "pack/mypackage/opt/nerdtree-git-plugin"]
 	path = pack/mypackage/opt/nerdtree-git-plugin
 	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/mypackage/opt/vista.vim"]
+	path = pack/mypackage/opt/vista.vim
+	url = git@github.com:liuchengxu/vista.vim.git

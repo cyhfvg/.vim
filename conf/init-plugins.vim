@@ -156,7 +156,7 @@ if index(g:plugin_group, 'tags') >= 0
 
   augroup my_plugin_tags
     autocmd!
-    autocmd CmdUndefined TlistToggle LoadConfig conf/autocmd/plugin/my_plugin_tags.vim
+    autocmd CmdUndefined Vista* LoadConfig conf/autocmd/plugin/my_plugin_tags.vim
   augroup End
 
 endif
@@ -169,8 +169,6 @@ if index(g:plugin_group, 'textobj') >= 0
   augroup End
 
 endif
-"==============================================================================
-
 "==============================================================================
 if index(g:plugin_group, 'debug') >= 0
 

@@ -17,8 +17,8 @@ endif
         \    'active': {
         \      'left': [
         \          ['mode', 'paste'],
-        \          ['gitBufStatus','filename'],
-        \          ['method' ]
+        \          ['gitBufStatus', 'filename', 'method'],
+        \          ['coc-status']
         \        ],
         \      'right': [
         \          ['filetype', 'fileencoding', 'lineinfo', 'percent'],
@@ -26,6 +26,8 @@ endif
         \      },
         \    'component_function': {
         \        'gitBufStatus': 'LightlineBufGitStatus',
+        \        'method': 'NearestMethodOrFunction',
+        \        'coc-status': 'coc#status',
         \      },
         \    'mode_map': {
         \        'n' : 'N',
@@ -55,6 +57,11 @@ endfunction
 "  let gGitStatus = get(g:, 'coc_git_status', '')
 "  return winwidth(0) > 120 ? gGitStatus : ''
 "endfu
+
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+
 "----------------------------------------------------------------------
 packadd lightline.vim
 "----------------------------------------------------------------------
