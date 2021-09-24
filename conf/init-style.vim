@@ -33,9 +33,14 @@ set colorcolumn=80
 " 水平切割窗口时，默认在右边显示新窗口
 set splitright
 
-" 设置 gvim 不显示标题栏、工具栏
+" 设置 gvim 不显示标题栏
 set guioptions-=m
+" 设置 gvim 不显示工具栏
 set guioptions-=T
+" 设置 gvim 不显示左侧垂直滚动条
+set guioptions-=l
+" 设置 gvim 不显示右侧垂直滚动条
+set guioptions-=r
 
 " 设置打开vim时显示更少的提示
 set shortmess=atI
