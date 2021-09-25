@@ -41,6 +41,8 @@ set guioptions-=T
 set guioptions-=l
 " 设置 gvim 不显示右侧垂直滚动条
 set guioptions-=r
+" 设置 gvim 不显示底部垂直滚动条
+set guioptions-=b
 
 " 设置打开vim时显示更少的提示
 set shortmess=atI
