@@ -7,17 +7,19 @@ else
   let s:loaded = v:true
 endif
 "-------------------------------------------------------------------------------
-"coc-marketplace
-let g:coc_global_extensions = ['coc-json'
-                              \, 'coc-git'
-                              \, 'coc-word'
-                              \, 'coc-syntax'
-                              \, 'coc-pairs'
-                              \, 'coc-highlight'
-                              \, 'coc-dictionary'
-                              \, 'coc-pyright'
-                              \, 'coc-vimlsp'
-                              \ ]
+"
+let g:coc_global_extensions = []
+let g:coc_global_extensions += ['coc-dictionary']
+let g:coc_global_extensions += ['coc-git']
+let g:coc_global_extensions += ['coc-highlight']
+let g:coc_global_extensions += ['coc-json']
+"let g:coc_global_extensions += ['coc-marketplace']
+let g:coc_global_extensions += ['coc-pairs']
+let g:coc_global_extensions += ['coc-pyright']
+let g:coc_global_extensions += ['coc-syntax']
+let g:coc_global_extensions += ['coc-vimlsp']
+let g:coc_global_extensions += ['coc-word']
+
 "-------------------------------------------------------------------------------
 " 给不同语言提供字典补全，插入模式下 c-x c-k 触发
 packadd vim-dict
