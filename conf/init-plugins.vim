@@ -90,7 +90,6 @@ if index(g:plugin_group, 'enhanced') >= 0
 "    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_enhanced.vim
   augroup End
 
-
 endif
 "==============================================================================
 if index(g:plugin_group, 'filetype') >= 0
