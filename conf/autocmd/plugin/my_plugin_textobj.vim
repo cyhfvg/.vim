@@ -36,5 +36,8 @@ packadd vim-sandwich
 " 由于 vim-sandwich 依赖快捷键前缀 s, 取消当前 s 键配置
 nmap s <Nop>
 xmap s <Nop>
+
+" 提供 增强的 % 
+packadd vim-matchup
 "}}}
 "----------------------------------------------------------------------

@@ -71,7 +71,7 @@ set incsearch
 if has('multi_byte')
   " 内部工作编码
   set encoding=utf-8
-  
+
   " 文件默认编码
   set fileencoding=utf-8
 

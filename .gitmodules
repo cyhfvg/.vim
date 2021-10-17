@@ -101,3 +101,6 @@
 [submodule "pack/mypackage/opt/vim-sandwich"]
 	path = pack/mypackage/opt/vim-sandwich
 	url = git@github.com:machakann/vim-sandwich.git
+[submodule "pack/mypackage/opt/vim-matchup"]
+	path = pack/mypackage/opt/vim-matchup
+	url = git@github.com:andymass/vim-matchup.git
