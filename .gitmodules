@@ -98,3 +98,6 @@
 [submodule "pack/mypackage/opt/vista.vim"]
 	path = pack/mypackage/opt/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
+[submodule "pack/mypackage/opt/vim-sandwich"]
+	path = pack/mypackage/opt/vim-sandwich
+	url = git@github.com:machakann/vim-sandwich.git

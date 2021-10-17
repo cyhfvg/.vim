@@ -26,4 +26,11 @@ packadd vim-textobj-syntax
 packadd vim-textobj-parameter
 " 提供 uri/url 的文本对象，iu / au 表示
 packadd vim-textobj-uri
+
+" 提供 环绕模式操作
+" Add 环绕: sa  例 saiw(
+" Delete 环绕: sd 例 sd"
+" Replace 环绕: sr 例 sr"'
+" 支持visual模式: line Visual 例 Vsa(
+packadd vim-sandwich
 "----------------------------------------------------------------------
