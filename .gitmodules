@@ -83,9 +83,6 @@
 [submodule "pack/mypackage/opt/vim-markdown"]
 	path = pack/mypackage/opt/vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git
-[submodule "pack/mypackage/opt/vim-markdown-toc"]
-	path = pack/mypackage/opt/vim-markdown-toc
-	url = git@github.com:mzlogin/vim-markdown-toc.git
 [submodule "pack/mypackage/opt/markdown-preview.nvim"]
 	path = pack/mypackage/opt/markdown-preview.nvim
 	url = git@github.com:iamcco/markdown-preview.nvim.git

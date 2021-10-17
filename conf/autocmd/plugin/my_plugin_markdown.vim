@@ -26,12 +26,6 @@ nnoremap <silent> <leader>mv :MarkdownPreviewToggle<cr>
 "依赖于tabular 确保tabular启动于vim-markdown之前
 packadd tabular
 packadd vim-markdown
-"生成markdown目录
-" 在当前光标后生成目录
-" :GenTocMarked
-" 更新目录
-" :UpdateToc
-packadd vim-markdown-toc
 " 手动至markdown-preview.nvim/app目录下安装nodejs依赖`yarn install`
 packadd markdown-preview.nvim
 "-------------------------------------------------------------------------------
