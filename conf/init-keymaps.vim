@@ -133,14 +133,14 @@ inoremap <m-k> <c-\><c-o>gk
 " 传统的 CTRL+hjkl 移动窗口不适用于 vim 8.1 的终端模式，CTRL+hjkl 在
 " bash/zsh 及带文本界面的程序中都是重要键位需要保留，不能 tnoremap 的
 "----------------------------------------------------------------------
-noremap <m-H> <c-w>h
-noremap <m-L> <c-w>l
-noremap <m-J> <c-w>j
-noremap <m-K> <c-w>k
-inoremap <m-H> <esc><c-w>h
-inoremap <m-L> <esc><c-w>l
-inoremap <m-J> <esc><c-w>j
-inoremap <m-K> <esc><c-w>k
+noremap <TAB>h :wincmd h<CR>
+noremap <TAB>l :wincmd l<CR>
+noremap <TAB>j :wincmd j<CR>
+noremap <TAB>k :wincmd k<CR>
+inoremap <TAB>h <esc>:wincmd h<CR>
+inoremap <TAB>l <esc>:wincmd l<CR>
+inoremap <TAB>j <esc>:wincmd j<CR>
+inoremap <TAB>k <esc>:wincmd k<CR>
 
 if has('terminal') && exists(':terminal') == 2 && has('patch-8.1.1')
   " vim 8.1 支持 termwinkey ，不需要把 terminal 切换成 normal 模式
