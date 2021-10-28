@@ -64,7 +64,9 @@ set t_Co=256
 " 设置主题
 "color solarized8_light_high
 "color hybrid_reverse
-color molokai
+"color molokai
+color gruvbox
+set background=dark
 
 " 1}}}
 
