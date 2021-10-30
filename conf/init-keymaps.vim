@@ -228,7 +228,14 @@ endif
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 " 1}}}
-"
+
+" 更改窗口大小{{{1
+nnoremap <Up> <C-w>+
+nnoremap <Down> <C-w>-
+nnoremap <Left> <C-w><
+nnoremap <Right> <C-w>>
+" 1}}}
+
 "
 "----------------------------------------------------------------------
 "vista 窗口打开
