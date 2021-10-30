@@ -107,3 +107,6 @@
 [submodule "pack/mypackage/start/gruvbox"]
 	path = pack/mypackage/start/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
+[submodule "pack/mypackage/opt/vim-table-mode"]
+	path = pack/mypackage/opt/vim-table-mode
+	url = git@github.com:dhruvasagar/vim-table-mode.git
