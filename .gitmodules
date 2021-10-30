@@ -104,3 +104,6 @@
 [submodule "pack/mypackage/opt/vim-matchup"]
 	path = pack/mypackage/opt/vim-matchup
 	url = git@github.com:andymass/vim-matchup.git
+[submodule "pack/mypackage/start/gruvbox"]
+	path = pack/mypackage/start/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
