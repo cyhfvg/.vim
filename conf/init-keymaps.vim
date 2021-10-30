@@ -3,19 +3,6 @@
 "================================================================================
 
 "----------------------------------------------------------------------
-" 设置 CTRL+HJKL 移动光标 {{{1
-"----------------------------------------------------------------------
-noremap <C-h> <left>
-noremap <C-j> <down>
-noremap <C-k> <up>
-noremap <C-l> <right>
-inoremap <C-h> <left>
-inoremap <C-j> <down>
-inoremap <C-k> <up>
-inoremap <C-l> <right>
-" 1}}}
-
-"----------------------------------------------------------------------
 " 命令模式的快速移动 {{{1
 "----------------------------------------------------------------------
 cnoremap <c-h> <left>
@@ -28,7 +15,6 @@ cnoremap <c-f> <c-d>
 cnoremap <c-b> <left>
 cnoremap <c-d> <del>
 cnoremap <c-_> <c-k>
-
 " 1}}}
 
 "----------------------------------------------------------------------
@@ -125,22 +111,21 @@ noremap <m-j> gj
 noremap <m-k> gk
 inoremap <m-j> <c-\><c-o>gj
 inoremap <m-k> <c-\><c-o>gk
-
 " 1}}}
 
 "----------------------------------------------------------------------
-" 窗口切换：ALT+SHIFT+hjkl {{{1
+" 窗口切换：Tab+hjkl {{{1
 " 传统的 CTRL+hjkl 移动窗口不适用于 vim 8.1 的终端模式，CTRL+hjkl 在
 " bash/zsh 及带文本界面的程序中都是重要键位需要保留，不能 tnoremap 的
 "----------------------------------------------------------------------
-noremap <TAB>h :wincmd h<CR>
-noremap <TAB>l :wincmd l<CR>
-noremap <TAB>j :wincmd j<CR>
-noremap <TAB>k :wincmd k<CR>
-inoremap <TAB>h <esc>:wincmd h<CR>
-inoremap <TAB>l <esc>:wincmd l<CR>
-inoremap <TAB>j <esc>:wincmd j<CR>
-inoremap <TAB>k <esc>:wincmd k<CR>
+noremap <TAB>h <C-w>h
+noremap <TAB>l <C-w>l
+noremap <TAB>j <C-w>j
+noremap <TAB>k <C-w>k
+inoremap <TAB>h <esc><C-w>h
+inoremap <TAB>l <esc><C-w>l
+inoremap <TAB>j <esc><C-w>j
+inoremap <TAB>k <esc><C-w>k
 
 if has('terminal') && exists(':terminal') == 2 && has('patch-8.1.1')
   " vim 8.1 支持 termwinkey ，不需要把 terminal 切换成 normal 模式
