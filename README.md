@@ -64,3 +64,4 @@ git submodule update --recursive --remote
 - [vim-textobj-uri](https://github.com/jceb/vim-textobj-uri)
 - [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 - [vista.vim](https://github.com/liuchengxu/vista.vim)
+- [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
