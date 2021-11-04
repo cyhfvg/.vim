@@ -62,9 +62,6 @@ set t_Co=256
 "set background=light
 
 " 设置主题
-"color solarized8_light_high
-"color hybrid_reverse
-"color molokai
 color gruvbox
 set background=dark
 
