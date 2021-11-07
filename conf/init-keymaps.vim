@@ -212,6 +212,7 @@ endif
 " 移动文本内容
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+nnoremap Y y$
 " 1}}}
 
 " 更改窗口大小{{{1
