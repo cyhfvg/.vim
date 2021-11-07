@@ -13,7 +13,7 @@ else
 endif
 "----------------------------------------------------------------------
   let g:lightline = {
-        \    'colorscheme': 'gruvbox',
+        \    'colorscheme': 'deus',
         \    'active': {
         \      'left': [
         \          ['mode', 'paste'],

@@ -70,3 +70,7 @@ Temporary Items
 .nfs*
 
 # 1}}}
+
+# vim's netrw {{{1
+.netrwhist
+# 1}}}
