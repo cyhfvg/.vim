@@ -77,9 +77,6 @@
 [submodule "pack/mypackage/opt/vim-preview"]
 	path = pack/mypackage/opt/vim-preview
 	url = git@github.com:skywind3000/vim-preview.git
-[submodule "pack/mypackage/opt/taglist.vim"]
-	path = pack/mypackage/opt/taglist.vim
-	url = git@github.com:vim-scripts/taglist.vim.git
 [submodule "pack/mypackage/opt/vim-markdown"]
 	path = pack/mypackage/opt/vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git

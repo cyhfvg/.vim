@@ -43,7 +43,6 @@ git submodule update --recursive --remote
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git)
 - [tabular](https://github.com/godlygeek/tabular)
-- [taglist.vim](https://github.com/vim-scripts/taglist.vim)
 - [vim-dict](https://github.com/asins/vim-dict)
 - [vim-diff-enhanced](https://github.com/chrisbra/vim-diff-enhanced)
 - [vim-easymotion](https://github.com/easymotion/vim-easymotion)
