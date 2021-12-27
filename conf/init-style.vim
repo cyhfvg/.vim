@@ -56,8 +56,13 @@ set noshowmode
 " 颜色主题: 色彩文件位于 colors 目录中 {{{1
 "--------------------------------------------------------------------------------
 
-" 允许 256 色
-set t_Co=256
+if has("termguicolors")
+  " 设置真彩
+  set termguicolors
+else
+  " 允许 256 色
+  set t_Co=256
+endif
 
 "set background=light
 
