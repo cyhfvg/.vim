@@ -323,7 +323,5 @@ set guitabtooltip=%{Vim_NeatGuiTabTip()}
 
 " 设置字体为 Fira Code
 set guifont=Fira_Code:h18
-" 修正Fira Code 在gvim下不生效 https://github.com/tonsky/FiraCode/issues/462
-set renderoptions=type:directx
 
 " 1}}}
