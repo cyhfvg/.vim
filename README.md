@@ -17,7 +17,7 @@ git submodule update --init --recursive
 ```bash
 cd ~/.vim
 # 插件安装至 pack\mypackage\start\*
-git submoudle add git@github.com:{username}/{packagename}.git pack/mypackage/start/{packagename}
+git submodule add git@github.com:{username}/{packagename}.git pack/mypackage/start/{packagename}
 ```
 
 ### 升级所有插件

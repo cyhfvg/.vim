@@ -107,3 +107,6 @@
 [submodule "pack/mypackage/opt/vim-table-mode"]
 	path = pack/mypackage/opt/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "pack/mypackage/opt/vim-surround"]
+	path = pack/mypackage/opt/vim-surround
+	url = git@github.com:tpope/vim-surround.git
