@@ -54,7 +54,6 @@ git submodule update --recursive --remote
 - [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
-- [vim-sandwich](https://github.com/machakann/vim-sandwich)
 - [vim-signature](https://github.com/kshenoy/vim-signature)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-textobj-indent](https://github.com/kana/vim-textobj-indent)
@@ -64,3 +63,4 @@ git submodule update --recursive --remote
 - [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 - [vista.vim](https://github.com/liuchengxu/vista.vim)
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
+- [vim-surround](https://github.com/tpope/vim-surround.git)
