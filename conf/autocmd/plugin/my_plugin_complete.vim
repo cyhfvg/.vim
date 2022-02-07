@@ -23,6 +23,7 @@ let g:coc_global_extensions += ['coc-word']
 "-------------------------------------------------------------------------------
 " 给不同语言提供字典补全，插入模式下 c-x c-k 触发
 packadd vim-dict
+set complete+=k
 
 if executable('node')
   packadd coc.nvim
