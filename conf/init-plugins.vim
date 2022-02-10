@@ -84,10 +84,10 @@ endif
 "==============================================================================
 if index(g:plugin_group, 'enhanced') >= 0
 
+
   augroup my_plugin_enhanced
     autocmd!
-    "TODO: i don't know when the plugin works
-"    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_enhanced.vim
+    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_enhanced.vim
   augroup End
 
 endif

@@ -1,13 +1,15 @@
-"Shougo/echodoc.vim
-" 防止重复加载
 if get(s:, 'loaded', v:false)
   finish
 else
   let s:loaded = v:true
 endif
 "-------------------------------------------------------------------------------
-set noshowmode
+
+if executable('ag')
+  " silversearcher-ag
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 "-------------------------------------------------------------------------------
-" echodoc：在底部显示函数参数
-packadd echodoc.vim
+packadd ack.vim
 "-------------------------------------------------------------------------------

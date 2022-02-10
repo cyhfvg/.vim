@@ -29,6 +29,7 @@ git submodule update --recursive --remote
 
 ### 相关插件列表
 
+- [ack.vim](https://github.com/mileszs/ack.vim.git)
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
@@ -40,8 +41,8 @@ git submodule update --recursive --remote
 - [ipdb](https://github.com/gotcha/ipdb)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [nerdtree](https://github.com/scrooloose/nerdtree)
 - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git)
+- [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tabular](https://github.com/godlygeek/tabular)
 - [vim-dict](https://github.com/asins/vim-dict)
 - [vim-diff-enhanced](https://github.com/chrisbra/vim-diff-enhanced)
@@ -56,11 +57,11 @@ git submodule update --recursive --remote
 - [vim-preview](https://github.com/skywind3000/vim-preview)
 - [vim-signature](https://github.com/kshenoy/vim-signature)
 - [vim-signify](https://github.com/mhinz/vim-signify)
+- [vim-surround](https://github.com/tpope/vim-surround.git)
+- [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
 - [vim-textobj-indent](https://github.com/kana/vim-textobj-indent)
 - [vim-textobj-parameter](https://github.com/sgur/vim-textobj-parameter)
 - [vim-textobj-syntax](https://github.com/kana/vim-textobj-syntax)
 - [vim-textobj-uri](https://github.com/jceb/vim-textobj-uri)
 - [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 - [vista.vim](https://github.com/liuchengxu/vista.vim)
-- [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
-- [vim-surround](https://github.com/tpope/vim-surround.git)

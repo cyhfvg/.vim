@@ -107,3 +107,6 @@
 [submodule "pack/mypackage/opt/vim-surround"]
 	path = pack/mypackage/opt/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "pack/mypackage/opt/ack.vim"]
+	path = pack/mypackage/opt/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
