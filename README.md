@@ -40,7 +40,6 @@ git submodule update --recursive --remote
 - [ipdb](https://github.com/gotcha/ipdb)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tabular](https://github.com/godlygeek/tabular)
 - [vim-dict](https://github.com/asins/vim-dict)
