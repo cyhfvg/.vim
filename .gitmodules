@@ -43,9 +43,6 @@
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/mypackage/opt/vim-nerdtree-syntax-highlight"]
-	path = pack/mypackage/opt/vim-nerdtree-syntax-highlight
-	url = git@github.com:tiagofumo/vim-nerdtree-syntax-highlight.git
 [submodule "pack/mypackage/opt/ctrlp.vim"]
 	path = pack/mypackage/opt/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git

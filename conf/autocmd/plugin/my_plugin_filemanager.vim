@@ -18,5 +18,4 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeHijackNetrw = 0
 "-------------------------------------------------------------------------------
 packadd nerdtree
-packadd vim-nerdtree-syntax-highlight
 "-------------------------------------------------------------------------------

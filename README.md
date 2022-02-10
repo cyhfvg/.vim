@@ -16,8 +16,8 @@ git submodule update --init --recursive
 
 ```bash
 cd ~/.vim
-# 插件安装至 pack\mypackage\start\*
-git submodule add git@github.com:{username}/{packagename}.git pack/mypackage/start/{packagename}
+# 插件安装至 pack\mypackage\opt\*
+git submodule add git@github.com:{username}/{packagename}.git pack/mypackage/opt/{packagename}
 ```
 
 ### 升级所有插件
@@ -50,7 +50,6 @@ git submodule update --recursive --remote
 - [vim-markdown](https://github.com/plasticboy/vim-markdown)
 - [vim-matchup](https://github.com/andymass/vim-matchup)
 - [vim-misc](https://github.com/xolox/vim-misc)
-- [vim-nerdtree-syntax-highlight](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
 - [vim-signature](https://github.com/kshenoy/vim-signature)
