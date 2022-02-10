@@ -33,7 +33,6 @@ git submodule update --recursive --remote
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-- [echodoc.vim](https://github.com/Shougo/echodoc.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [gruvbox](https://github.com/morhetz/gruvbox)
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus)
