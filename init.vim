@@ -44,7 +44,7 @@ LoadConfig conf/init-tabsize.vim
 LoadConfig conf/init-plugins.vim
 
 " 界面样式
- LoadConfig conf/init-style.vim
+LoadConfig conf/init-style.vim
 
 "* 自定义按键
 LoadConfig conf/init-keymaps.vim
