@@ -230,23 +230,6 @@ nnoremap <silent> <leader>v :Vista!!<cr>
 "
 "
 "----------------------------------------------------------------------
-"fuzzy plugin
-"
-" CTRL+p 打开文件模糊匹配
-noremap <c-p> :CtrlP<cr>
-
-" CTRL+n 打开最近访问过的文件的匹配
-"noremap <c-n> :CtrlPMRUFiles<cr>
-
-" ALT+p 显示当前文件的函数列表
-noremap <m-p> :CtrlPFunky<cr>
-
-" ALT+n 匹配 buffer
-noremap <m-n> :CtrlPBuffer<cr>
-"----------------------------------------------------------------------
-"
-"
-"----------------------------------------------------------------------
 "file manager plugin
 nnoremap <silent> <leader>e :NERDTreeToggle<cr>
 nnoremap <silent> <leader>nf :NERDTreeFind<cr>

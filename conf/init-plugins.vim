@@ -25,12 +25,12 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['textobj']
   let g:plugin_group += ['undo']
 endif
+
 "==============================================================================
 if index(g:plugin_group, 'fuzzy') >= 0
-  augroup my_plugin_fuzzy
-    autocmd!
-    autocmd CmdUndefined CtrlP* LoadConfig conf/autocmd/plugin/my_plugin_fuzzy.vim
-  augroup End
+
+  LoadConfig conf/autocmd/plugin/my_plugin_fuzzy.vim
+
 endif
 "==============================================================================
 if index(g:plugin_group, 'filemanager') >= 0

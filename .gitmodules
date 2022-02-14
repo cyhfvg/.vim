@@ -43,12 +43,6 @@
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/mypackage/opt/ctrlp.vim"]
-	path = pack/mypackage/opt/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "pack/mypackage/opt/ctrlp-funky"]
-	path = pack/mypackage/opt/ctrlp-funky
-	url = git@github.com:tacahiroy/ctrlp-funky.git
 [submodule "pack/mypackage/opt/undotree"]
 	path = pack/mypackage/opt/undotree
 	url = git@github.com:mbbill/undotree.git
@@ -100,3 +94,6 @@
 [submodule "pack/mypackage/opt/ack.vim"]
 	path = pack/mypackage/opt/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "pack/mypackage/opt/fzf.vim"]
+	path = pack/mypackage/opt/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
