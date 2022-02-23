@@ -85,3 +85,6 @@
 [submodule "pack/mypackage/opt/fzf.vim"]
 	path = pack/mypackage/opt/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
+[submodule "pack/mypackage/start/undotree"]
+	path = pack/mypackage/start/undotree
+	url = git@github.com:mbbill/undotree.git

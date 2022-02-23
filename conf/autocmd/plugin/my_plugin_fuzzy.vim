@@ -4,11 +4,7 @@ if get(s:, 'loaded', v:false)
 else
   let s:loaded = v:true
 endif
-"-------------------------------------------------------------------------------
-if !executable('fzf')
-  finish
-endif
-"-------------------------------------------------------------------------------
+
 packadd fzf
 packadd fzf.vim
 

@@ -40,6 +40,7 @@ git submodule update --recursive --remote
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tabular](https://github.com/godlygeek/tabular)
+- [undotree](https://github.com/mbbill/undotree)
 - [vim-dict](https://github.com/asins/vim-dict)
 - [vim-diff-enhanced](https://github.com/chrisbra/vim-diff-enhanced)
 - [vim-fugitive](https://github.com/tpope/vim-fugit)

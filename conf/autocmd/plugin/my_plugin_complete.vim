@@ -1,11 +1,9 @@
-"asins/vim-dict
-"neoclide/coc.nvim
-" 防止重复加载
 if get(s:, 'loaded', v:false)
   finish
 else
   let s:loaded = v:true
 endif
+
 "-------------------------------------------------------------------------------
 "
 let g:coc_global_extensions = []

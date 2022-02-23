@@ -9,8 +9,6 @@
   let $LANG='en'
   set langmenu=en
 
-  " 设置中文帮助语言
-  set helplang=cn
 " 1}}}
 
 "--------------------------------------------------------------------------------
@@ -47,6 +45,23 @@ endif
 " 设置交换文件地址
 let &directory=s:swapdir .','.&directory
 
+" 1}}}
+
+"--------------------------------------------------------------------------------
+" undo 设置 {{{1
+"--------------------------------------------------------------------------------
+"
+" persistent_undo
+if has("persistent_undo")
+  let s:undo_path = expand(g:vimfilehome .'/'.'dirs/undodir')
+  " create the directory and any parent directories
+  " if the location does not exist.
+  if !isdirectory(s:undo_path)
+    call mkdir(s:undo_path, "p", 0755)
+  endif
+  let &undodir=s:undo_path
+  set undofile
+endif
 " 1}}}
 
 "--------------------------------------------------------------------------------
