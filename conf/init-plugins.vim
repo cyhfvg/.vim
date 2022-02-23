@@ -7,7 +7,6 @@
 " plugin group 分组
 if !exists('g:plugin_group')
   let g:plugin_group = []
-  let g:plugin_group += ['basic']
   let g:plugin_group += ['complete']
   let g:plugin_group += ['debug']
   let g:plugin_group += ['diff']
@@ -45,12 +44,6 @@ endif
 if index(g:plugin_group, 'undo') >= 0
 
   LoadConfig conf/autocmd/plugin/my_plugin_undo.vim
-
-endif
-"==============================================================================
-if index(g:plugin_group, 'basic') >= 0
-
-  LoadConfig conf/autocmd/plugin/my_plugin_basic.vim
 
 endif
 "==============================================================================

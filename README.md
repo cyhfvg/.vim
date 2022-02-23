@@ -43,7 +43,6 @@ git submodule update --recursive --remote
 - [tabular](https://github.com/godlygeek/tabular)
 - [vim-dict](https://github.com/asins/vim-dict)
 - [vim-diff-enhanced](https://github.com/chrisbra/vim-diff-enhanced)
-- [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 - [vim-fugitive](https://github.com/tpope/vim-fugit)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 - [vim-markdown](https://github.com/plasticboy/vim-markdown)

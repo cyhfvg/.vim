@@ -1,6 +1,3 @@
-[submodule "pack/mypackage/opt/vim-easymotion"]
-	path = pack/mypackage/opt/vim-easymotion
-	url = git@github.com:easymotion/vim-easymotion.git
 [submodule "pack/mypackage/opt/tabular"]
 	path = pack/mypackage/opt/tabular
 	url = git@github.com:godlygeek/tabular.git
