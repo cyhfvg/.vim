@@ -35,7 +35,6 @@ git submodule update --recursive --remote
 - [fzf](https://github.com/junegunn/fzf)
 - [gruvbox](https://github.com/morhetz/gruvbox)
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus)
-- [indentLine](https://github.com/Yggdroot/indentLine)
 - [ipdb](https://github.com/gotcha/ipdb)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)

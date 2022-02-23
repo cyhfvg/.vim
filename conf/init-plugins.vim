@@ -133,13 +133,7 @@ endif
 "==============================================================================
 if index(g:plugin_group, 'style') >= 0
 
-  "init before vim open
   LoadConfig conf/autocmd/plugin/my_plugin_style.vim
-
-  augroup my_plugin_indent
-    autocmd!
-    autocmd FileType python LoadConfig conf/autocmd/plugin/my_plugin_indent.vim
-  augroup End
 
 endif
 "==============================================================================

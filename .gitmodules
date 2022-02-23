@@ -40,9 +40,6 @@
 [submodule "pack/mypackage/opt/coc.nvim"]
 	path = pack/mypackage/opt/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
-[submodule "pack/mypackage/opt/indentLine"]
-	path = pack/mypackage/opt/indentLine
-	url = git@github.com:Yggdroot/indentLine.git
 [submodule "pack/mypackage/opt/fzf"]
 	path = pack/mypackage/opt/fzf
 	url = git@github.com:junegunn/fzf.git
