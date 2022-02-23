@@ -83,6 +83,7 @@ if index(g:plugin_group, 'filetype') >= 0
     autocmd FileType markdown packadd vim-polyglot
     autocmd FileType python packadd vim-polyglot
     autocmd FileType shell packadd vim-polyglot
+    autocmd FileType vim packadd vim-polyglot
   augroup End
 
 endif
