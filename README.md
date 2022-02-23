@@ -56,7 +56,5 @@ git submodule update --recursive --remote
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
 - [vim-textobj-indent](https://github.com/kana/vim-textobj-indent)
 - [vim-textobj-parameter](https://github.com/sgur/vim-textobj-parameter)
-- [vim-textobj-syntax](https://github.com/kana/vim-textobj-syntax)
-- [vim-textobj-uri](https://github.com/jceb/vim-textobj-uri)
 - [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 - [vista.vim](https://github.com/liuchengxu/vista.vim)

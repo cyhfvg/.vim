@@ -25,15 +25,9 @@
 [submodule "pack/mypackage/opt/vim-textobj-indent"]
 	path = pack/mypackage/opt/vim-textobj-indent
 	url = git@github.com:kana/vim-textobj-indent.git
-[submodule "pack/mypackage/opt/vim-textobj-syntax"]
-	path = pack/mypackage/opt/vim-textobj-syntax
-	url = git@github.com:kana/vim-textobj-syntax.git
 [submodule "pack/mypackage/opt/vim-textobj-parameter"]
 	path = pack/mypackage/opt/vim-textobj-parameter
 	url = git@github.com:sgur/vim-textobj-parameter.git
-[submodule "pack/mypackage/opt/vim-textobj-uri"]
-	path = pack/mypackage/opt/vim-textobj-uri
-	url = git@github.com:jceb/vim-textobj-uri.git
 [submodule "pack/mypackage/opt/vim-polyglot"]
 	path = pack/mypackage/opt/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
