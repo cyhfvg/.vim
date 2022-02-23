@@ -11,7 +11,6 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['debug']
   let g:plugin_group += ['enhance']
   let g:plugin_group += ['filemanager']
-  let g:plugin_group += ['filetype']
   let g:plugin_group += ['fuzzy']
   let g:plugin_group += ['git']
   let g:plugin_group += ['lib']
@@ -69,21 +68,6 @@ if index(g:plugin_group, 'lib') >= 0
   augroup my_plugin_lib
     autocmd!
     autocmd FuncUndefined xolox#* LoadConfig conf/autocmd/plugin/my_plugin_lib.vim
-  augroup End
-
-endif
-"==============================================================================
-if index(g:plugin_group, 'filetype') >= 0
-
-  augroup my_plugin_filetype
-    autocmd!
-    autocmd FileType csv packadd vim-polyglot
-    autocmd FileType java packadd vim-polyglot
-    autocmd FileType javascript packadd vim-polyglot
-    autocmd FileType markdown packadd vim-polyglot
-    autocmd FileType python packadd vim-polyglot
-    autocmd FileType shell packadd vim-polyglot
-    autocmd FileType vim packadd vim-polyglot
   augroup End
 
 endif

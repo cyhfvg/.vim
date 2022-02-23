@@ -28,9 +28,6 @@
 [submodule "pack/mypackage/opt/vim-textobj-parameter"]
 	path = pack/mypackage/opt/vim-textobj-parameter
 	url = git@github.com:sgur/vim-textobj-parameter.git
-[submodule "pack/mypackage/opt/vim-polyglot"]
-	path = pack/mypackage/opt/vim-polyglot
-	url = git@github.com:sheerun/vim-polyglot.git
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -88,3 +85,6 @@
 [submodule "pack/mypackage/start/undotree"]
 	path = pack/mypackage/start/undotree
 	url = git@github.com:mbbill/undotree.git
+[submodule "pack/mypackage/start/vim-polyglot"]
+	path = pack/mypackage/start/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
