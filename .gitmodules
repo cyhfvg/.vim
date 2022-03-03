@@ -31,9 +31,6 @@
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/mypackage/opt/undotree"]
-	path = pack/mypackage/opt/undotree
-	url = git@github.com:mbbill/undotree.git
 [submodule "pack/mypackage/opt/coc.nvim"]
 	path = pack/mypackage/opt/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git

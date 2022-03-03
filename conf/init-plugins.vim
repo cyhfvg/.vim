@@ -30,7 +30,7 @@ if index(g:plugin_group, 'fuzzy') >= 0
 
   augroup my_plugin_ack
     autocmd!
-    autocmd CmdUndefined Ack LoadConfig conf/autocmd/plugin/my_plugin_ack.vim
+    autocmd CmdUndefined Ack*,LAck* LoadConfig conf/autocmd/plugin/my_plugin_ack.vim
   augroup End
 
 endif
