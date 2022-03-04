@@ -23,7 +23,7 @@ set ttimeout
 set ttimeoutlen=50
 
 " highlight cursor line
-set ruler
+set noruler
 
 set belloff=all
 
