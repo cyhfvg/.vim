@@ -5,6 +5,7 @@ else
 endif
 
   let g:lightline = {
+        \    'colorscheme': 'one',
         \    'active': {
         \      'left': [
         \          ['mode', 'paste'],
