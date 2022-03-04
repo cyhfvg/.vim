@@ -17,7 +17,7 @@ elseif executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 
-" 不会自动跳转到第一个匹配文件
+" alias Ack! : do not autojump first matched
 cnoreabbrev Ack Ack!
 
 let g:ackhighlight = 1

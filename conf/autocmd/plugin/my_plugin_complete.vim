@@ -4,48 +4,44 @@ else
   let s:loaded = v:true
 endif
 
-"-------------------------------------------------------------------------------
-"
-let g:coc_global_extensions = []
-let g:coc_global_extensions += ['coc-dictionary']
-let g:coc_global_extensions += ['coc-git']
-let g:coc_global_extensions += ['coc-highlight']
-let g:coc_global_extensions += ['coc-json']
-"let g:coc_global_extensions += ['coc-marketplace']
-let g:coc_global_extensions += ['coc-pairs']
-let g:coc_global_extensions += ['coc-pyright']
-let g:coc_global_extensions += ['coc-syntax']
-let g:coc_global_extensions += ['coc-vimlsp']
-let g:coc_global_extensions += ['coc-word']
-
-"-------------------------------------------------------------------------------
-" 给不同语言提供字典补全，插入模式下 c-x c-k 触发
+" add dictionary for complete
 packadd vim-dict
 set complete+=k
 
+" coc
 if executable('node')
-  packadd coc.nvim
 
-  " 设置提示延迟时间为300ms, 默认为4000ms = 4s
+  packadd coc.nvim
+  "-------------------------------------------------------------------------------
+  let g:coc_global_extensions = []
+  "let g:coc_global_extensions += ['coc-marketplace']
+  let g:coc_global_extensions += ['coc-dictionary']
+  let g:coc_global_extensions += ['coc-git']
+  let g:coc_global_extensions += ['coc-highlight']
+  let g:coc_global_extensions += ['coc-json']
+  let g:coc_global_extensions += ['coc-pairs']
+  let g:coc_global_extensions += ['coc-pyright']
+  let g:coc_global_extensions += ['coc-syntax']
+  let g:coc_global_extensions += ['coc-vimlsp']
+  let g:coc_global_extensions += ['coc-word']
+  "-------------------------------------------------------------------------------
+
+  " tips lazy time
   set updatetime=300
 
-  " 自动完成提示框中不跳过信息
+  " short messages
   set shortmess+=c
 
-  " 使用 K 显示帮助信息
-  nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-  " GOTO code navigation {{{3
+  " GOTO code navigation
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gr <Plug>(coc-references)
-  "}}}3
 
-  " 重命名变量
+  " refactor: variable
   nmap <leader>rn <Plug>(coc-rename)
 
-  "}}}3
-
+  " documentation
+  nnoremap <silent> K :call <SID>show_documentation()<CR>
   function! s:show_documentation()
     if (index(['vim','help'], &filetype) >= 0)
       execute 'h '.expand('<cword>')
