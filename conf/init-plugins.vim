@@ -13,7 +13,6 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['filemanager']
   let g:plugin_group += ['fuzzy']
   let g:plugin_group += ['git']
-  let g:plugin_group += ['lib']
   let g:plugin_group += ['markdown']
   let g:plugin_group += ['tags']
   let g:plugin_group += ['textobj']
@@ -69,15 +68,6 @@ if index(g:plugin_group, 'enhance') >= 0
     autocmd VimEnter * packadd vim-matchup
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_diff.vim
     autocmd VimEnter * packadd vim-commentary
-  augroup End
-
-endif
-"==============================================================================
-if index(g:plugin_group, 'lib') >= 0
-
-  augroup my_plugin_lib
-    autocmd!
-    autocmd FuncUndefined xolox#* LoadConfig conf/autocmd/plugin/my_plugin_lib.vim
   augroup End
 
 endif

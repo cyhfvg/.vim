@@ -45,7 +45,6 @@ git submodule update --recursive --remote
 - [vim-fugitive](https://github.com/tpope/vim-fugit)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 - [vim-matchup](https://github.com/andymass/vim-matchup)
-- [vim-misc](https://github.com/xolox/vim-misc)
 - [vim-one](https://github.com/rakr/vim-one)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
