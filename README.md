@@ -49,7 +49,6 @@ git submodule update --recursive --remote
 - [vim-one](https://github.com/rakr/vim-one)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
-- [vim-signature](https://github.com/kshenoy/vim-signature)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)

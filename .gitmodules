@@ -7,9 +7,6 @@
 [submodule "pack/mypackage/opt/vim-misc"]
 	path = pack/mypackage/opt/vim-misc
 	url = git@github.com:xolox/vim-misc.git
-[submodule "pack/mypackage/opt/vim-signature"]
-	path = pack/mypackage/opt/vim-signature
-	url = git@github.com:kshenoy/vim-signature.git
 [submodule "pack/mypackage/opt/vim-signify"]
 	path = pack/mypackage/opt/vim-signify
 	url = git@github.com:mhinz/vim-signify.git
