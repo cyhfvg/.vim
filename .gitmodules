@@ -49,9 +49,6 @@
 [submodule "pack/mypackage/opt/markdown-preview.nvim"]
 	path = pack/mypackage/opt/markdown-preview.nvim
 	url = git@github.com:iamcco/markdown-preview.nvim.git
-[submodule "pack/mypackage/opt/ipdb"]
-	path = pack/mypackage/opt/ipdb
-	url = git@github.com:gotcha/ipdb.git
 [submodule "pack/mypackage/opt/lightline.vim"]
 	path = pack/mypackage/opt/lightline.vim
 	url = git@github.com:itchyny/lightline.vim.git

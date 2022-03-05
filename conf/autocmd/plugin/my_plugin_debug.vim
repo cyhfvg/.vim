@@ -3,6 +3,3 @@ if get(s:, 'loaded', v:false)
 else
   let s:loaded = v:true
 endif
-
-" python debugger
-packadd ipdb

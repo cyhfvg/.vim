@@ -34,7 +34,6 @@ git submodule update --recursive --remote
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [gutentags_plus](https://github.com/skywind3000/gutentags_plus)
-- [ipdb](https://github.com/gotcha/ipdb)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)
 - [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
