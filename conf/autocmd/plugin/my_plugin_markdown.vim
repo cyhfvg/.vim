@@ -6,11 +6,6 @@ endif
 
 packadd markdown-preview.nvim
 
-"markdown 高亮,语法
-"依赖于tabular 确保tabular启动于vim-markdown之前
-packadd tabular
-packadd vim-markdown
-
 " table-mode
 packadd vim-table-mode
 " | toggle table mode  | <leader>tm      |

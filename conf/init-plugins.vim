@@ -1,10 +1,10 @@
 "==============================================================================
-" init-plugins.vim - 插件
+" init-plugins.vim
 "==============================================================================
 "
 "
 
-" plugin group 分组
+" plugin group
 if !exists('g:plugin_group')
   let g:plugin_group = []
   let g:plugin_group += ['complete']

@@ -43,7 +43,7 @@ endif
 
 " theme
 color one
-set background=light
+set background=dark
 let g:one_allow_italics = 1
 " lightline
 LoadConfig conf/autocmd/plugin/my_plugin_style.vim
