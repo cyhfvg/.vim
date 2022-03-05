@@ -76,3 +76,6 @@
 [submodule "pack/mypackage/start/vim-dict"]
 	path = pack/mypackage/start/vim-dict
 	url = git@github.com:asins/vim-dict.git
+[submodule "pack/mypackage/opt/vim-abolish"]
+	path = pack/mypackage/opt/vim-abolish
+	url = git@github.com:tpope/vim-abolish.git

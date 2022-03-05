@@ -68,6 +68,7 @@ if index(g:plugin_group, 'enhance') >= 0
     " enhanced %
     autocmd VimEnter * packadd vim-matchup
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_diff.vim
+    autocmd CmdUndefined Subvert packadd vim-abolish
   augroup End
 
 endif
