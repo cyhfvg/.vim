@@ -45,6 +45,8 @@ endif
 color one
 set background=light
 let g:one_allow_italics = 1
+" lightline
+LoadConfig conf/autocmd/plugin/my_plugin_style.vim
 
 " terminal window style
 if has('terminal') && exists(':terminal') == 2

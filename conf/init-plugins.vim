@@ -16,7 +16,6 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['lib']
   let g:plugin_group += ['markdown']
   let g:plugin_group += ['marks']
-  let g:plugin_group += ['style']
   let g:plugin_group += ['tags']
   let g:plugin_group += ['textobj']
 endif
@@ -97,12 +96,6 @@ if index(g:plugin_group, 'marks') >= 0
     autocmd!
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_marks.vim
   augroup End
-
-endif
-"==============================================================================
-if index(g:plugin_group, 'style') >= 0
-
-  LoadConfig conf/autocmd/plugin/my_plugin_style.vim
 
 endif
 "==============================================================================
