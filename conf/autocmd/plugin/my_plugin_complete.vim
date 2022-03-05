@@ -4,10 +4,6 @@ else
   let s:loaded = v:true
 endif
 
-" add dictionary for complete
-packadd vim-dict
-set complete+=k
-
 " coc
 if executable('node')
 
