@@ -35,7 +35,6 @@ let g:gutentags_auto_add_gtags_cscope = 0
 
 packadd vim-gutentags
 
-packadd gutentags_plus
 packadd vim-preview
 packadd vista.vim
 "-------------------------------------------------------------------------------
