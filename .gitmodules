@@ -79,3 +79,6 @@
 [submodule "pack/mypackage/opt/vim-abolish"]
 	path = pack/mypackage/opt/vim-abolish
 	url = git@github.com:tpope/vim-abolish.git
+[submodule "pack/mypackage/opt/vim-commentary"]
+	path = pack/mypackage/opt/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
