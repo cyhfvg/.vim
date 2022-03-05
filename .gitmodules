@@ -64,9 +64,6 @@
 [submodule "pack/mypackage/opt/vim-matchup"]
 	path = pack/mypackage/opt/vim-matchup
 	url = git@github.com:andymass/vim-matchup.git
-[submodule "pack/mypackage/start/gruvbox"]
-	path = pack/mypackage/start/gruvbox
-	url = git@github.com:morhetz/gruvbox.git
 [submodule "pack/mypackage/opt/vim-table-mode"]
 	path = pack/mypackage/opt/vim-table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
@@ -85,3 +82,6 @@
 [submodule "pack/mypackage/start/vim-polyglot"]
 	path = pack/mypackage/start/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "pack/mypackage/start/vim-one"]
+	path = pack/mypackage/start/vim-one
+	url = git@github.com:rakr/vim-one.git

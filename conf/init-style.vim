@@ -1,128 +1,52 @@
 "================================================================================
-" init-style.vim - 显示样式设置
+" init-style.vim
 "================================================================================
 
-"--------------------------------------------------------------------------------
-" 显示设置 {{{1
-"--------------------------------------------------------------------------------
-
-" 总是显示状态栏
+" statusline always=2
 set laststatus=2
-
-" 显示行号
 set number
-
-" 显示侧边栏 (显示 mark/gitdiff/诊断信息)
 set signcolumn=yes
-
-" 显示标签栏
+" tabline always=2
 set showtabline=2
-
-" 显示制表符等非打印字符
+" show special chars
 set list
-
-" 右下角显示命令
 set showcmd
-
-" 设置高亮显示光标行
 set cursorline
-
-" 设置高亮显示第 80 列
 set colorcolumn=80
-
-" 水平切割窗口时，默认在右边显示新窗口
+" show new window in right
 set splitright
 
-" 设置 gvim 不显示标题栏
+" no title bar
 set guioptions-=m
-" 设置 gvim 不显示工具栏
+" no tool bar
 set guioptions-=T
-" 设置 gvim 不显示左侧垂直滚动条
+" no left scrollbar
 set guioptions-=l
-" 设置 gvim 不显示右侧垂直滚动条
+" no right scrollbar
 set guioptions-=r
-" 设置 gvim 不显示底部垂直滚动条
+" no bottom scrollbar
 set guioptions-=b
-
-" 设置打开vim时显示更少的提示
+" set shortmessage
 set shortmess=atI
-
-" 不在底部显示当前模式
 set noshowmode
 
-" 1}}}
-
-"--------------------------------------------------------------------------------
-" 颜色主题: 色彩文件位于 colors 目录中 {{{1
-"--------------------------------------------------------------------------------
-
+" true color
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 if has("termguicolors")
-  " 设置真彩
+  " true color
   set termguicolors
 else
-  " 允许 256 色
   set t_Co=256
 endif
 
-"set background=light
+" theme
+color one
+set background=light
+let g:one_allow_italics = 1
 
-" 设置主题
-color gruvbox
-set background=dark
-
-" 1}}}
-
-"----------------------------------------------------------------------
-" 状态栏设置 {{{1
-"----------------------------------------------------------------------
-"set statusline=                                 " 清空状态栏
-"set statusline+=\ %F                            " 文件名
-"set statusline+=\ [%1*%M%*%n%R%H]               " buffer 编号和状态
-"set statusline+=%=                              " 向右对齐
-"set statusline+=\ %y                            " 文件类型
-"
-"" 最右边显示文件编码和行号等信息，并且固定在一个 group 中，优先占位
-"set statusline+=\ %0(%{&fileformat}\ [%{(&fenc==\"\"?&enc:&fenc).(&bomb?\",BOM\":\"\")}]\ %v:%l/%L%)
-
-" 1}}}
-
-"----------------------------------------------------------------------
-" 更改样式 {{{1
-"----------------------------------------------------------------------
-
-" 更清晰的错误标注：默认一片红色背景，语法高亮都被搞没了
-" 只显示红色或者蓝色下划线或者波浪线
-hi! clear SpellBad
-hi! clear SpellCap
-hi! clear SpellRare
-hi! clear SpellLocal
-if has('gui_running')
-  hi! SpellBad gui=undercurl guisp=red
-  hi! SpellCap gui=undercurl guisp=blue
-  hi! SpellRare gui=undercurl guisp=magenta
-  hi! SpellRare gui=undercurl guisp=cyan
-else
-  hi! SpellBad term=standout ctermfg=1 term=underline cterm=underline
-  hi! SpellCap term=underline cterm=underline
-  hi! SpellRare term=underline cterm=underline
-  hi! SpellLocal term=underline cterm=underline
-endif
-
-" 去掉 sign column 的白色背景
-hi! SignColumn guibg=NONE ctermbg=NONE
-
-" 修改行号为浅灰色，默认主题的黄色行号很难看，换主题可以仿照修改
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
-  \ gui=NONE guifg=DarkGrey guibg=NONE
-
-" 修正补全目录的色彩：默认太难看
-hi! Pmenu guibg=gray guifg=black ctermbg=gray ctermfg=black
-hi! PmenuSel guibg=gray guifg=brown ctermbg=brown ctermfg=gray
-" 1}}}
-
-"----------------------------------------------------------------------
-" 终端设置，隐藏行号和侧边栏 {{{1
-"----------------------------------------------------------------------
+" terminal window style
 if has('terminal') && exists(':terminal') == 2
   if exists('##TerminalOpen')
     augroup VimUnixTerminalGroup
@@ -132,33 +56,14 @@ if has('terminal') && exists(':terminal') == 2
   endif
 endif
 
-" 1}}}
-
-"----------------------------------------------------------------------
-" quickfix 设置，隐藏行号 {{{1
-"----------------------------------------------------------------------
+" quickfix window style
 augroup VimInitStyle
   au!
   au FileType qf setlocal nonumber
 augroup END
 
-" 1}}}
-
 "----------------------------------------------------------------------
-" 标签栏文字风格 {{{1
-" 默认为零，GUI 模式下空间大，按风格 3显示
-" 0: filename.txt
-" 2: 1 - filename.txt
-" 3: [1] filename.txt
-"----------------------------------------------------------------------
-if has('gui_running')
-  let g:config_vim_tab_style = 3
-endif
-
-" 1}}}
-
-"----------------------------------------------------------------------
-" 终端下的 tabline {{{1
+" TabLine style
 "----------------------------------------------------------------------
 function! Vim_NeatTabLine()
   let s = ''
@@ -188,10 +93,8 @@ function! Vim_NeatTabLine()
   return s
 endfunc
 
-" 1}}}
-
 "----------------------------------------------------------------------
-" 需要显示到标签上的文件名 {{{1
+" set filename show into tab
 "----------------------------------------------------------------------
 function! Vim_NeatBuffer(bufnr, fullname)
   let l:name = bufname(a:bufnr)
@@ -229,11 +132,16 @@ function! Vim_NeatBuffer(bufnr, fullname)
   endif
 endfunc
 
-" 1}}}
-
 "----------------------------------------------------------------------
-" 标签栏文字，使用 [1] filename 的模式 {{{1
+" get tabline style by n
 "----------------------------------------------------------------------
+"
+" let g:config_vim_tab_style = n
+"
+" 0: filename.txt
+" 2: 1 - filename.txt
+" 3: [1] filename.txt
+"
 function! Vim_NeatTabLabel(n)
   let l:buflist = tabpagebuflist(a:n)
   let l:winnr = tabpagewinnr(a:n)
@@ -254,74 +162,8 @@ function! Vim_NeatTabLabel(n)
   return "[".l:num."] ".l:fname
 endfunc
 
-" 1}}}
-
-"----------------------------------------------------------------------
-" GUI 下的标签文字，使用 [1] filename 的模式 {{{1
-"----------------------------------------------------------------------
-function! Vim_NeatGuiTabLabel()
-  let l:num = v:lnum
-  let l:buflist = tabpagebuflist(l:num)
-  let l:winnr = tabpagewinnr(l:num)
-  let l:bufnr = l:buflist[l:winnr - 1]
-  let l:fname = Vim_NeatBuffer(l:bufnr, 0)
-  let style = get(g:, 'config_vim_tab_style', 0)
-  if style == 0
-    return l:fname
-  elseif style == 1
-    return "[".l:num."] ".l:fname
-  elseif style == 2
-    return "".l:num." - ".l:fname
-  endif
-  if getbufvar(l:bufnr, '&modified')
-    return "[".l:num."] ".l:fname." +"
-  endif
-  return "[".l:num."] ".l:fname
-endfunc
-
-" 1}}}
-
-"----------------------------------------------------------------------
-" 设置 GUI 标签的 tips: 显示当前标签有哪些窗口 {{{1
-"----------------------------------------------------------------------
-function! Vim_NeatGuiTabTip()
-  let tip = ''
-  let bufnrlist = tabpagebuflist(v:lnum)
-  for bufnr in bufnrlist
-    " separate buffer entries
-    if tip != ''
-      let tip .= " \n"
-    endif
-    " Add name of buffer
-    let name = Vim_NeatBuffer(bufnr, 1)
-    let tip .= name
-    " add modified/modifiable flags
-    if getbufvar(bufnr, "&modified")
-      let tip .= ' [+]'
-    endif
-    if getbufvar(bufnr, "&modifiable")==0
-      let tip .= ' [-]'
-    endif
-  endfor
-  return tip
-endfunc
-
-" 1}}}
-
-"----------------------------------------------------------------------
-" 标签栏最终设置 {{{1
-"----------------------------------------------------------------------
 set tabline=%!Vim_NeatTabLine()
-set guitablabel=%{Vim_NeatGuiTabLabel()}
-set guitabtooltip=%{Vim_NeatGuiTabTip()}
+set guitablabel=%{Vim_NeatTabLine()}
 
-" 1}}}
-
-"----------------------------------------------------------------------
-" 字体 font {{{1
-"----------------------------------------------------------------------
-
-" 设置字体为 Fira Code
+" font
 set guifont=Fira_Code:h18
-
-" 1}}}
