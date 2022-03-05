@@ -60,6 +60,13 @@ if index(g:plugin_group, 'enhance') >= 0
   augroup my_plugin_enhance
     autocmd!
     autocmd CmdUndefined Tab* packadd tabular
+    " ys<operator><desired>    ==> add surround
+    " cs<existing><desired>    ==> change surround, <existing> to <desired>
+    " ds<existing>             ==> delete surround, <existing>
+    " S<desired>               ==> visual mode: surround selected content
+    autocmd VimEnter * packadd vim-surround
+    " enhanced %
+    autocmd VimEnter * packadd vim-matchup
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_diff.vim
   augroup End
 
