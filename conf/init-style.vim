@@ -165,7 +165,7 @@ function! Vim_NeatTabLabel(n)
 endfunc
 
 set tabline=%!Vim_NeatTabLine()
-set guitablabel=%{Vim_NeatTabLine()}
+set guitablabel=%!Vim_NeatTabLine()
 
 " font
 set guifont=Fira_Code:h18
