@@ -36,6 +36,9 @@ if executable('node')
   " refactor: variable
   nmap <leader>rn <Plug>(coc-rename)
 
+  " trigger complete manually
+  inoremap <silent><expr> <c-x><c-x> coc#refresh()
+
   " documentation
   nnoremap <silent> K :call <SID>show_documentation()<CR>
   function! s:show_documentation()
