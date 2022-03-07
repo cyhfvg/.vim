@@ -76,3 +76,6 @@
 [submodule "pack/mypackage/opt/vim-commentary"]
 	path = pack/mypackage/opt/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "pack/mypackage/opt/vim-pencil"]
+	path = pack/mypackage/opt/vim-pencil
+	url = git@github.com:preservim/vim-pencil.git
