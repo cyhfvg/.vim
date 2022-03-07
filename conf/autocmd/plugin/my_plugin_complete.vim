@@ -37,7 +37,7 @@ if executable('node')
   nmap <leader>rn <Plug>(coc-rename)
 
   " trigger complete manually
-  inoremap <silent><expr> <c-x><c-x> coc#refresh()
+  inoremap <silent><expr> <c-c> coc#refresh()
 
   " documentation
   nnoremap <silent> K :call <SID>show_documentation()<CR>
