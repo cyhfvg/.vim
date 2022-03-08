@@ -126,7 +126,7 @@ if index(g:plugin_group, 'writer') >= 0
     autocmd!
     autocmd FileType markdown,text packadd vim-pencil
                             \ | call pencil#init({'wrap': 'hard', 'textwidth': 120, 'autoformat': 0})
-                            \ | setl spell spelllang=en_us foldlevel=4 noruler nonumber norelativenumber
+                            \ | setl spell spelllang=en_us,cjk foldlevel=4 noruler nonumber norelativenumber
                             \ | setl foldopen+=search
   augroup End
 
