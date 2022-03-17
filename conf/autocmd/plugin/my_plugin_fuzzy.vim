@@ -11,4 +11,4 @@ let g:fzf_preview_window = ['up:50%', 'ctrl-/']
 
 noremap <c-p> :Files<cr>
 noremap <m-p> :Buffers<cr>
-noremap <c-m> :Marks<cr>
+noremap <m-m> :Marks<cr>

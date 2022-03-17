@@ -83,6 +83,10 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap Y y$
 
+" text search
+" search visual content, escape special char
+vnoremap <silent> //    y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
+
 "vista tag view(autoload)
 nnoremap <silent> <leader>v :Vista!!<cr>
 
