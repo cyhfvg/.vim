@@ -30,7 +30,6 @@ git submodule update --recursive --remote
 ### 相关插件列表
 
 - [ack.vim](https://github.com/mileszs/ack.vim.git)
-- [coc.nvim](https://github.com/neoclide/coc.nvim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [lightline.vim](https://github.com/itchyny/lightline.vim)

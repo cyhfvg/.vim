@@ -2,8 +2,8 @@
 " init-config.vim
 "================================================================================
 
-let $LANG='en'
-set langmenu=en
+set langmenu=en_US.UTF-8
+language en
 
 " backup
 set backup

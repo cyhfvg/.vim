@@ -22,9 +22,6 @@
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/mypackage/opt/coc.nvim"]
-	path = pack/mypackage/opt/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git
 [submodule "pack/mypackage/opt/fzf"]
 	path = pack/mypackage/opt/fzf
 	url = git@github.com:junegunn/fzf.git
