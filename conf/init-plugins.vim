@@ -47,11 +47,6 @@ if index(g:plugin_group, 'complete') >= 0
   " add dictionary for complete
   set complete+=k
 
-  augroup my_plugin_complete
-    autocmd!
-    autocmd InsertEnter * LoadConfig conf/autocmd/plugin/my_plugin_complete.vim
-  augroup End
-
 endif
 "==============================================================================
 if index(g:plugin_group, 'enhance') >= 0
