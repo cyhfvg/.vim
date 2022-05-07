@@ -58,9 +58,6 @@
 [submodule "pack/mypackage/start/undotree"]
 	path = pack/mypackage/start/undotree
 	url = git@github.com:mbbill/undotree.git
-[submodule "pack/mypackage/start/vim-polyglot"]
-	path = pack/mypackage/start/vim-polyglot
-	url = git@github.com:sheerun/vim-polyglot.git
 [submodule "pack/mypackage/start/vim-one"]
 	path = pack/mypackage/start/vim-one
 	url = git@github.com:rakr/vim-one.git

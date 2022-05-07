@@ -46,7 +46,6 @@ git submodule update --recursive --remote
 - [vim-matchup](https://github.com/andymass/vim-matchup)
 - [vim-one](https://github.com/rakr/vim-one)
 - [vim-pencil](https://github.com/preservim/vim-pencil)
-- [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
 - [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
