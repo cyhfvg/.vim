@@ -11,8 +11,6 @@ set nocompatible
 
 set backspace=eol,start,indent
 
-set autoindent
-
 " disable alt keys in windows
 set winaltkeys=no
 
@@ -42,15 +40,13 @@ if has('multi_byte')
 endif
 
 " autoIndent by filetype
+set autoindent
 if has('autocmd')
   filetype plugin indent on
 endif
 
 " syntax
-if has('syntax')
-  syntax enable
-  syntax on
-endif
+syntax off
 
 " show matched quotes
 set showmatch
