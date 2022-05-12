@@ -32,7 +32,6 @@ git submodule update --recursive --remote
 - [ack.vim](https://github.com/mileszs/ack.vim.git)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
-- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tabular](https://github.com/godlygeek/tabular)
 - [undotree](https://github.com/mbbill/undotree)

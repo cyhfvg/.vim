@@ -4,8 +4,6 @@ else
   let s:loaded = v:true
 endif
 
-packadd markdown-preview.nvim
-
 " table-mode
 packadd vim-table-mode
 " | toggle table mode  | <leader>tm      |
