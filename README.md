@@ -45,7 +45,6 @@ git submodule update --recursive --remote
 - [vim-matchup](https://github.com/andymass/vim-matchup)
 - [vim-pencil](https://github.com/preservim/vim-pencil)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
-- [vim-signify](https://github.com/mhinz/vim-signify)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)
 - [vim-textobj-indent](https://github.com/kana/vim-textobj-indent)
