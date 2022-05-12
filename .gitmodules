@@ -34,9 +34,6 @@
 [submodule "pack/mypackage/opt/markdown-preview.nvim"]
 	path = pack/mypackage/opt/markdown-preview.nvim
 	url = git@github.com:iamcco/markdown-preview.nvim.git
-[submodule "pack/mypackage/opt/lightline.vim"]
-	path = pack/mypackage/opt/lightline.vim
-	url = git@github.com:itchyny/lightline.vim.git
 [submodule "pack/mypackage/opt/vista.vim"]
 	path = pack/mypackage/opt/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
@@ -58,9 +55,6 @@
 [submodule "pack/mypackage/start/undotree"]
 	path = pack/mypackage/start/undotree
 	url = git@github.com:mbbill/undotree.git
-[submodule "pack/mypackage/start/vim-one"]
-	path = pack/mypackage/start/vim-one
-	url = git@github.com:rakr/vim-one.git
 [submodule "pack/mypackage/start/vim-dict"]
 	path = pack/mypackage/start/vim-dict
 	url = git@github.com:asins/vim-dict.git

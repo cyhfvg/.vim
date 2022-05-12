@@ -11,8 +11,6 @@ set showtabline=2
 " show special chars
 set list
 set showcmd
-set cursorline
-set colorcolumn=80
 " show new window in right
 set splitright
 
@@ -40,13 +38,6 @@ if has("termguicolors")
 else
   set t_Co=256
 endif
-
-" theme
-color one
-set background=dark
-let g:one_allow_italics = 1
-" lightline
-LoadConfig conf/autocmd/plugin/my_plugin_style.vim
 
 " terminal window style
 if has('terminal') && exists(':terminal') == 2
