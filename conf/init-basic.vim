@@ -46,7 +46,10 @@ if has('autocmd')
 endif
 
 " syntax
-syntax off
+if has('syntax')
+  syntax enable
+  syntax on
+endif
 
 " show matched quotes
 set showmatch
