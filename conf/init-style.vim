@@ -2,8 +2,8 @@
 " init-style.vim
 "================================================================================
 
-" statusline always=2
-set laststatus=2
+" statusline only when >2 windows
+set laststatus=1
 set number
 set signcolumn=yes
 " tabline always=2
