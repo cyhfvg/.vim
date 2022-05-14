@@ -34,7 +34,5 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 let g:gutentags_auto_add_gtags_cscope = 0
 
 packadd vim-gutentags
-
-packadd vim-preview
 packadd vista.vim
 "-------------------------------------------------------------------------------

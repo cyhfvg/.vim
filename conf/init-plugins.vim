@@ -23,12 +23,12 @@ endif
 if index(g:plugin_group, 'fuzzy') >= 0
 
   if executable('fzf')
-    LoadConfig conf/autocmd/plugin/my_plugin_fuzzy.vim
+    LoadConfig conf/autocmd/plugin/fuzzy.vim
   endif
 
   augroup my_plugin_ack
     autocmd!
-    autocmd CmdUndefined Ack*,LAck* LoadConfig conf/autocmd/plugin/my_plugin_ack.vim
+    autocmd CmdUndefined Ack*,LAck* LoadConfig conf/autocmd/plugin/ack.vim
   augroup End
 
 endif
@@ -37,7 +37,7 @@ if index(g:plugin_group, 'filemanager') >= 0
 
   augroup my_plugin_filemanager
     autocmd!
-    autocmd CmdUndefined NERDTree* LoadConfig conf/autocmd/plugin/my_plugin_filemanager.vim
+    autocmd CmdUndefined NERDTree* LoadConfig conf/autocmd/plugin/filemanager.vim
   augroup End
 
 endif
@@ -51,6 +51,18 @@ endif
 "==============================================================================
 if index(g:plugin_group, 'enhance') >= 0
 
+  " vim-preview {{{1
+  "
+  " scroll half page
+  noremap <m-u> :PreviewScroll -1<cr>
+  noremap <m-d> :PreviewScroll +1<cr>
+  inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
+  inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
+  " quickfix preview
+  autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+  autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
+  "}}}
+
   augroup my_plugin_enhance
     autocmd!
     autocmd CmdUndefined Tab* packadd tabular
@@ -62,8 +74,9 @@ if index(g:plugin_group, 'enhance') >= 0
     autocmd VimEnter * packadd vim-surround
     " enhanced %
     autocmd VimEnter * packadd vim-matchup
-    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_diff.vim
+    autocmd VimEnter * LoadConfig conf/autocmd/plugin/diff.vim
     autocmd VimEnter * packadd vim-commentary
+    autocmd CmdUndefined Preview* LoadConfig conf/autocmd/plugin/preview.vim
   augroup End
 
 endif
@@ -73,7 +86,7 @@ if index(g:plugin_group, 'git') >= 0
 
   augroup my_plugin_git
     autocmd!
-    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_git.vim
+    autocmd VimEnter * LoadConfig conf/autocmd/plugin/git.vim
   augroup End
 
 endif
@@ -82,7 +95,7 @@ if index(g:plugin_group, 'markdown') >= 0
 
   augroup my_plugin_markdown
     autocmd!
-    autocmd FileType markdown LoadConfig conf/autocmd/plugin/my_plugin_markdown.vim
+    autocmd FileType markdown LoadConfig conf/autocmd/plugin/markdown.vim
   augroup End
 
 endif
@@ -92,7 +105,7 @@ if index(g:plugin_group, 'tags') >= 0
 
   augroup my_plugin_tags
     autocmd!
-    autocmd CmdUndefined Vista* LoadConfig conf/autocmd/plugin/my_plugin_tags.vim
+    autocmd CmdUndefined Vista* LoadConfig conf/autocmd/plugin/tags.vim
   augroup End
 
 endif
@@ -101,7 +114,7 @@ if index(g:plugin_group, 'textobj') >= 0
 
   augroup my_plugin_textobj
     autocmd!
-    autocmd VimEnter * LoadConfig conf/autocmd/plugin/my_plugin_textobj.vim
+    autocmd VimEnter * LoadConfig conf/autocmd/plugin/textobj.vim
   augroup End
 
 endif
@@ -110,7 +123,7 @@ if index(g:plugin_group, 'debug') >= 0
 
   augroup my_plugin_debug
     autocmd!
-    autocmd FileType python LoadConfig conf/autocmd/plugin/my_plugin_debug.vim
+    autocmd FileType python LoadConfig conf/autocmd/plugin/debug.vim
   augroup End
 
 endif
