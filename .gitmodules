@@ -1,63 +1,63 @@
 [submodule "pack/mypackage/opt/tabular"]
 	path = pack/mypackage/opt/tabular
-	url = git@github.com:godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "pack/mypackage/opt/vim-diff-enhanced"]
 	path = pack/mypackage/opt/vim-diff-enhanced
-	url = git@github.com:chrisbra/vim-diff-enhanced.git
+	url = https://github.com/chrisbra/vim-diff-enhanced.git
 [submodule "pack/mypackage/opt/vim-fugitive"]
 	path = pack/mypackage/opt/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/mypackage/opt/vim-textobj-user"]
 	path = pack/mypackage/opt/vim-textobj-user
-	url = git@github.com:kana/vim-textobj-user.git
+	url = https://github.com/kana/vim-textobj-user.git
 [submodule "pack/mypackage/opt/vim-textobj-indent"]
 	path = pack/mypackage/opt/vim-textobj-indent
-	url = git@github.com:kana/vim-textobj-indent.git
+	url = https://github.com/kana/vim-textobj-indent.git
 [submodule "pack/mypackage/opt/vim-textobj-parameter"]
 	path = pack/mypackage/opt/vim-textobj-parameter
-	url = git@github.com:sgur/vim-textobj-parameter.git
+	url = https://github.com/sgur/vim-textobj-parameter.git
 [submodule "pack/mypackage/opt/nerdtree"]
 	path = pack/mypackage/opt/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "pack/mypackage/opt/fzf"]
 	path = pack/mypackage/opt/fzf
-	url = git@github.com:junegunn/fzf.git
+	url = https://github.com/junegunn/fzf.git
 [submodule "pack/mypackage/opt/vim-gutentags"]
 	path = pack/mypackage/opt/vim-gutentags
-	url = git@github.com:ludovicchabant/vim-gutentags.git
+	url = https://github.com/ludovicchabant/vim-gutentags.git
 [submodule "pack/mypackage/opt/vim-preview"]
 	path = pack/mypackage/opt/vim-preview
-	url = git@github.com:skywind3000/vim-preview.git
+	url = https://github.com/skywind3000/vim-preview.git
 [submodule "pack/mypackage/opt/vista.vim"]
 	path = pack/mypackage/opt/vista.vim
-	url = git@github.com:liuchengxu/vista.vim.git
+	url = https://github.com/liuchengxu/vista.vim.git
 [submodule "pack/mypackage/opt/vim-matchup"]
 	path = pack/mypackage/opt/vim-matchup
-	url = git@github.com:andymass/vim-matchup.git
+	url = https://github.com/andymass/vim-matchup.git
 [submodule "pack/mypackage/opt/vim-table-mode"]
 	path = pack/mypackage/opt/vim-table-mode
-	url = git@github.com:dhruvasagar/vim-table-mode.git
+	url = https://github.com/dhruvasagar/vim-table-mode.git
 [submodule "pack/mypackage/opt/vim-surround"]
 	path = pack/mypackage/opt/vim-surround
-	url = git@github.com:tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "pack/mypackage/opt/ack.vim"]
 	path = pack/mypackage/opt/ack.vim
-	url = git@github.com:mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "pack/mypackage/opt/fzf.vim"]
 	path = pack/mypackage/opt/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
+	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/mypackage/start/undotree"]
 	path = pack/mypackage/start/undotree
-	url = git@github.com:mbbill/undotree.git
+	url = https://github.com/mbbill/undotree.git
 [submodule "pack/mypackage/start/vim-dict"]
 	path = pack/mypackage/start/vim-dict
-	url = git@github.com:asins/vim-dict.git
+	url = https://github.com/asins/vim-dict.git
 [submodule "pack/mypackage/opt/vim-abolish"]
 	path = pack/mypackage/opt/vim-abolish
-	url = git@github.com:tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish.git
 [submodule "pack/mypackage/opt/vim-commentary"]
 	path = pack/mypackage/opt/vim-commentary
-	url = git@github.com:tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "pack/mypackage/opt/vim-pencil"]
 	path = pack/mypackage/opt/vim-pencil
-	url = git@github.com:preservim/vim-pencil.git
+	url = https://github.com/preservim/vim-pencil.git
