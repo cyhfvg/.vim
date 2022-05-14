@@ -7,8 +7,8 @@ set laststatus=1
 set number
 " no sigh column
 set signcolumn=no
-" tabline always=2
-set showtabline=2
+" tabline only when >2 tabs
+set showtabline=1
 " show special chars
 set list
 set showcmd
