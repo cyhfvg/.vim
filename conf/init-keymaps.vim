@@ -99,8 +99,8 @@ nnoremap <silent> <leader>u :UndotreeToggle<cr>
 " vim-preview {{{1
 "
 " scroll half page
-noremap <m-u> :PreviewScroll -1<cr>
-noremap <m-d> :PreviewScroll +1<cr>
+nnoremap <m-u> :PreviewScroll -1<cr>
+nnoremap <m-d> :PreviewScroll +1<cr>
 inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
 inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
 " quickfix preview

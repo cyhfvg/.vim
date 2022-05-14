@@ -14,7 +14,7 @@ set backspace=eol,start,indent
 " disable alt keys in windows
 set winaltkeys=no
 
-" 打开功能键超时检测 终端下功能键为一串 Esc 开头的字符串
+" 打开功能键超时检测 终端下功能键为一串 Esc 开头的字符串 ; 与terminal下ALT键映射相关
 set ttimeout
 
 " 功能键超时检测50毫秒
