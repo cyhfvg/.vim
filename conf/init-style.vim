@@ -5,7 +5,8 @@
 " statusline only when >2 windows
 set laststatus=1
 set number
-set signcolumn=yes
+" no sigh column
+set signcolumn=no
 " tabline always=2
 set showtabline=2
 " show special chars
