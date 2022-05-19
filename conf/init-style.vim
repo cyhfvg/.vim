@@ -29,6 +29,36 @@ set guioptions-=b
 set shortmess=atI
 set noshowmode
 
+" color setting ----- ----- {{{1
+" spell error color
+hi! clear SpellBad
+hi! clear SpellCap
+hi! clear SpellRare
+hi! clear SpellLocal
+if has('gui_running')
+  hi! SpellBad gui=undercurl guisp=red
+  hi! SpellCap gui=undercurl guisp=blue
+  hi! SpellRare gui=undercurl guisp=magenta
+  hi! SpellRare gui=undercurl guisp=cyan
+else
+  hi! SpellBad term=standout ctermfg=1 term=underline cterm=underline
+  hi! SpellCap term=underline cterm=underline
+  hi! SpellRare term=underline cterm=underline
+  hi! SpellLocal term=underline cterm=underline
+endif
+
+" sign column color
+hi! SignColumn guibg=NONE ctermbg=NONE
+
+" number line color
+highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE 
+  \ gui=NONE guifg=DarkGrey guibg=NONE
+
+" complete popup menu
+hi! Pmenu guibg=gray guifg=black ctermbg=gray ctermfg=black
+hi! PmenuSel guibg=gray guifg=brown ctermbg=brown ctermfg=gray
+" ----- -----}}}
+
 " true color
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1

@@ -2,6 +2,8 @@
 
 my-vim8-package-manager
 
+ref: [skywind3000/vim-init](https://github.com/skywind3000/vim-init)
+
 ## 安装
 
 ```bash
