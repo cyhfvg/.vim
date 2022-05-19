@@ -51,8 +51,7 @@ if index(g:plugin_group, 'enhance') >= 0
 
   augroup my_plugin_enhance
     autocmd!
-    autocmd CmdUndefined Tab* packadd tabular
-    autocmd CmdUndefined Subvert packadd vim-abolish
+    autocmd VimEnter * packadd vim-abolish
     " ys<operator><desired>    ==> add surround
     " cs<existing><desired>    ==> change surround, <existing> to <desired>
     " ds<existing>             ==> delete surround, <existing>
@@ -63,6 +62,7 @@ if index(g:plugin_group, 'enhance') >= 0
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/diff.vim
     autocmd VimEnter * packadd vim-commentary
     autocmd CmdUndefined Preview* LoadConfig conf/autocmd/plugin/preview.vim
+    autocmd CmdUndefined Tab* packadd tabular
   augroup End
 
 endif
