@@ -19,7 +19,7 @@ git submodule update --init --recursive
 ```bash
 cd ~/.vim
 # 插件安装至 pack\mypackage\opt\*
-git submodule add git@github.com:{username}/{packagename}.git pack/mypackage/opt/{packagename}
+git submodule add https://github.com/{username}/{packagename}.git pack/mypackage/opt/{packagename}
 ```
 
 ### 升级所有插件
@@ -44,7 +44,6 @@ git submodule update --recursive --remote
 - [vim-fugitive](https://github.com/tpope/vim-fugit)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 - [vim-matchup](https://github.com/andymass/vim-matchup)
-- [vim-pencil](https://github.com/preservim/vim-pencil)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
 - [vim-surround](https://github.com/tpope/vim-surround.git)
 - [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode.git)

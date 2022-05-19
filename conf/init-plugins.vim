@@ -15,7 +15,6 @@ if !exists('g:plugin_group')
   let g:plugin_group += ['markdown']
   let g:plugin_group += ['tags']
   let g:plugin_group += ['textobj']
-  let g:plugin_group += ['writer']
 endif
 
 "==============================================================================
@@ -111,18 +110,6 @@ if index(g:plugin_group, 'debug') >= 0
   augroup my_plugin_debug
     autocmd!
     autocmd FileType python LoadConfig conf/autocmd/plugin/debug.vim
-  augroup End
-
-endif
-"==============================================================================
-if index(g:plugin_group, 'writer') >= 0
-
-  augroup my_plugin_pencil
-    autocmd!
-    autocmd FileType markdown,text packadd vim-pencil
-                            \ | call pencil#init({'wrap': 'hard', 'textwidth': 120, 'autoformat': 0})
-                            \ | setl spell spelllang=en_us,cjk foldlevel=4 noruler nonumber norelativenumber
-                            \ | setl foldopen+=search
   augroup End
 
 endif
