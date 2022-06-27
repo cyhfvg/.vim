@@ -8,6 +8,6 @@ updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
       time: "01:00"
       timezone: "Asia/Shanghai"
