@@ -40,6 +40,8 @@ git submodule update --recursive --remote
 ```
 
 # 更新子模块到最新commitID(本地)
+
+```bash
 git submodule update --recursive --remote
 ```
 
