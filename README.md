@@ -8,32 +8,26 @@ ref: [skywind3000/vim-init](https://github.com/skywind3000/vim-init)
 
 ```bash
 # 获取仓库
-<<<<<<< HEAD
 git clone git@github.com:cyhfvg/.vim.git
 cd .vim/
 # 获取子模块内容
-=======
 #git clone git@github.com:cyhfvg/.vim.git
 git clone https://github.com/cyhfvg/.vim.git
 cd .vim/
 
 # 获取子模块内容(获取依赖插件)
->>>>>>> feda444 (doc(readme): fix readme)
 git submodule update --init --recursive
 ```
 
 ### 添加插件
 
-<<<<<<< HEAD
 ```bash
 cd ~/.vim
-=======
 
 ```bash
 # 以添加git子模块的方式添加插件
 cd ~/.vim
 
->>>>>>> feda444 (doc(readme): fix readme)
 # 插件安装至 pack\mypackage\opt\*
 git submodule add https://github.com/{username}/{packagename}.git pack/mypackage/opt/{packagename}
 ```
@@ -41,12 +35,10 @@ git submodule add https://github.com/{username}/{packagename}.git pack/mypackage
 ### 升级所有插件
 
 ```bash
-<<<<<<< HEAD
 # 将子模块插件 从当前 commitID 升级至远端最新版本
 git submodule update --recursive --remote
 ```
 
-=======
 # 更新子模块到最新commitID(本地)
 git submodule update --recursive --remote
 ```
@@ -55,7 +47,6 @@ git submodule update --recursive --remote
 
 使用github `dependabot` 进行自动更新。
 
->>>>>>> feda444 (doc(readme): fix readme)
 ### 相关插件列表
 
 - [ack.vim](https://github.com/mileszs/ack.vim.git)
