@@ -55,3 +55,6 @@
 [submodule "pack/mypackage/opt/vim-commentary"]
 	path = pack/mypackage/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/mypackage/opt/vim-fugitive"]
+	path = pack/mypackage/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
