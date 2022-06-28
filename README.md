@@ -48,7 +48,7 @@ git submodule update --recursive --remote
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 - [vim-dict](https://github.com/asins/vim-dict)
 - [vim-diff-enhanced](https://github.com/chrisbra/vim-diff-enhanced)
-- [vim-fugitive](https://github.com/tpope/vim-fugit)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
 - [vim-matchup](https://github.com/andymass/vim-matchup)
 - [vim-preview](https://github.com/skywind3000/vim-preview)
