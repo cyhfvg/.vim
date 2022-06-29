@@ -4,10 +4,11 @@ else
   let s:loaded = v:true
 endif
 
-packadd fzf
-packadd fzf.vim
+" Fzf prefix
+let g:fzf_command_prefix = 'Fzf'
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
+
 let g:fzf_preview_window = ['up:50%', 'ctrl-/']
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
@@ -20,6 +21,20 @@ let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %
 " History  fuzzy edit history files
 " History:    fuzzy history commands
 
-noremap <c-p> :Files<cr>
-noremap <m-p> :Buffers<cr>
-noremap <m-m> :Marks<cr>
+" return tracked files when a git repo
+function! FzfOmniFiles()
+  let is_git = system('git rev-parse --git-dir')
+  if v:shell_error
+    :FzfFiles
+  else
+    :FzfGFiles --exclude-standard
+  endif
+endfunction
+
+noremap <silent> <c-p> :call FzfOmniFiles()<cr>
+noremap <m-p> :FzfBuffers<cr>
+noremap <m-m> :FzfMarks<cr>
+
+"==========
+packadd fzf
+packadd fzf.vim
