@@ -9,7 +9,7 @@ let g:fzf_command_prefix = 'Fzf'
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
-let g:fzf_preview_window = ['up:50%', 'ctrl-/']
+let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 " [[B]Commits] Customize the options used by 'git log':
