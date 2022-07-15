@@ -39,6 +39,7 @@ git submodule update --recursive --remote
 ### 相关插件列表
 
 - [ack.vim](https://github.com/mileszs/ack.vim.git)
+- [asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [nerdtree](https://github.com/scrooloose/nerdtree)

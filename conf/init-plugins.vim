@@ -63,6 +63,9 @@ if index(g:plugin_group, 'enhance') >= 0
     autocmd VimEnter * packadd vim-commentary
     autocmd CmdUndefined Preview* LoadConfig conf/autocmd/plugin/preview.vim
     autocmd CmdUndefined Tab* packadd tabular
+    autocmd CmdUndefined AsyncRun packadd asyncrun.vim \
+                                  let g:asyncrun_open = 6
+
   augroup End
 
 endif

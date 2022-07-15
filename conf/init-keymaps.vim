@@ -107,3 +107,45 @@ inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
 autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
 autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
 "}}}
+
+"----------------------------------------------------------------------
+" <F5> exec file by filetype, output to quickfix window
+"----------------------------------------------------------------------
+nnoremap <silent> <F5> :call ExecuteFile()<cr>
+function! ExecuteFile()
+    let cmd = ''
+    if index(['c', 'cpp', 'rs'], &ft) >= 0
+        let cmd = '"$(VIM_FILEDIR)/$(VIM_FILENOEXT)"'
+    elseif &ft == 'go'
+        let cmd = 'go run "$(VIM_FILEPATH)"'
+    elseif &ft == 'python'
+        let $PYTHONUNBUFFERED=1
+        let cmd = 'python "$(VIM_FILEPATH)"'
+    elseif &ft == 'javascript'
+        let cmd = 'node "$(VIM_FILEPATH)"'
+    elseif &ft == 'perl'
+        let cmd = 'perl "$(VIM_FILEPATH)"'
+    elseif &ft == 'ruby'
+        let cmd = 'ruby "$(VIM_FILEPATH)"'
+    elseif &ft == 'php'
+        let cmd = 'php "$(VIM_FILEPATH)"'
+    elseif &ft == 'lua'
+        let cmd = 'lua "$(VIM_FILEPATH)"'
+    elseif &ft == 'zsh'
+        let cmd = 'zsh "$(VIM_FILEPATH)"'
+    elseif &ft == 'ps1'
+        let cmd = 'powershell -file "$(VIM_FILEPATH)"'
+    elseif &ft == 'vbs'
+        let cmd = 'cscript -nologo "$(VIM_FILEPATH)"'
+    elseif &ft == 'sh'
+        let cmd = 'bash "$(VIM_FILEPATH)"'
+    else
+        return
+    endif
+
+    if has('win32') || has('win64')
+        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=4 '. cmd
+    else
+        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=0 '. cmd
+    endif
+endfunc
