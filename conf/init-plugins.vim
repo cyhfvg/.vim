@@ -63,8 +63,9 @@ if index(g:plugin_group, 'enhance') >= 0
     autocmd VimEnter * packadd vim-commentary
     autocmd CmdUndefined Preview* LoadConfig conf/autocmd/plugin/preview.vim
     autocmd CmdUndefined Tab* packadd tabular
+    " Asyncrun: quickfix window height: 10
     autocmd CmdUndefined AsyncRun packadd asyncrun.vim \
-                                  let g:asyncrun_open = 6
+                                  let g:asyncrun_open = 10
 
   augroup End
 
