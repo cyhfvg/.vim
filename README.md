@@ -59,3 +59,9 @@ git submodule update --recursive --remote
 - [vim-textobj-parameter](https://github.com/sgur/vim-textobj-parameter)
 - [vim-textobj-user](https://github.com/kana/vim-textobj-user)
 - [vista.vim](https://github.com/liuchengxu/vista.vim)
+
+### requirement bins
+
+- [fzf](https://github.com/junegunn/fzf)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- ctags
