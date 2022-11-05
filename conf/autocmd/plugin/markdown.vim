@@ -6,6 +6,9 @@ endif
 
 " table-mode
 packadd vim-table-mode
+" Markdown-compatible
+let g:table_mode_corner='|'
+
 " | toggle table mode  | <leader>tm      |
 " | 表格重新对齐       | <leader>tr      |
 " | 删除一行           | <leader>tdd     |
