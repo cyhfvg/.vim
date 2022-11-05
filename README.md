@@ -40,6 +40,7 @@ git submodule update --recursive --remote
 
 - [ack.vim](https://github.com/mileszs/ack.vim.git)
 - [asyncrun.vim](https://github.com/skywind3000/asyncrun.vim)
+- [coc.nvim](https://github.com/mileszs/ack.vim.git)
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
