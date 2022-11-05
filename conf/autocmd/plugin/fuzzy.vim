@@ -34,6 +34,7 @@ endfunction
 noremap <silent> <c-p> :call FzfOmniFiles()<cr>
 noremap <m-p> :FzfBuffers<cr>
 noremap <m-m> :FzfMarks<cr>
+noremap <leader><leader>f :FzfRg<cr>
 
 "==========
 packadd fzf

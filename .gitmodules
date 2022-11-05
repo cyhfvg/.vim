@@ -61,3 +61,9 @@
 [submodule "pack/mypackage/opt/asyncrun.vim"]
 	path = pack/mypackage/opt/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
+[submodule "pack/mypackage/opt/lazygit"]
+	path = pack/mypackage/opt/lazygit
+	url = https://github.com/kdheepak/lazygit.nvim.git
+[submodule "pack/mypackage/start/coc.nvim"]
+	path = pack/mypackage/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git

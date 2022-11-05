@@ -45,6 +45,8 @@ if index(g:plugin_group, 'complete') >= 0
   " add dictionary for complete
   set complete+=k
 
+  LoadConfig conf/autocmd/plugin/coc.vim
+
 endif
 "==============================================================================
 if index(g:plugin_group, 'enhance') >= 0
@@ -78,6 +80,14 @@ if index(g:plugin_group, 'git') >= 0
     autocmd!
     autocmd VimEnter * LoadConfig conf/autocmd/plugin/git.vim
   augroup End
+
+  " lazygit
+  if executable('lazygit')
+    augroup my_plugin_lazygit
+      autocmd!
+      autocmd CmdUndefined LazyGit* packadd lazygit
+    augroup End
+  endif
 
 endif
 "==============================================================================
