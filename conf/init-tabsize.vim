@@ -1,14 +1,15 @@
-"================================================================================
-" init-tabsize.vim
-"================================================================================
+vim9script
+#================================================================================
+# init-tabsize.vim
+#================================================================================
 
-" indent width
+# indent width
 set shiftwidth=4
-" tab = <n> spaces
+# tab = <n> spaces
 set tabstop=4
-" use spaces without tab char
+# use spaces without tab char
 set expandtab
-" tab = <n> spaces
+# tab = <n> spaces
 set softtabstop=4
 
 augroup tabSize
