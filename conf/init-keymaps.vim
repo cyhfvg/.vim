@@ -1,8 +1,9 @@
-"================================================================================
-" init-keymaps.vim
-"================================================================================
+vim9script
+#================================================================================
+# init-keymaps.vim
+#================================================================================
 
-" cursor movement: command line
+# cursor movement: command line
 cnoremap <c-h> <left>
 cnoremap <c-j> <down>
 cnoremap <c-k> <up>
@@ -13,23 +14,23 @@ cnoremap <c-f> <c-d>
 cnoremap <c-b> <left>
 cnoremap <c-d> <del>
 cnoremap <c-_> <c-k>
-" cursor movement: wrap line
+# cursor movement: wrap line
 noremap <m-j> gj
 noremap <m-k> gk
 inoremap <m-j> <c-\><c-o>gj
 inoremap <m-k> <c-\><c-o>gk
 
-" buffer switch
+# buffer switch
 noremap <silent> <leader>bn :bn<cr>
 noremap <silent> <leader>bp :bp<cr>
 
-" tab switch
+# tab switch
 noremap <silent> <leader>tc :tabnew<cr>
 noremap <silent> <leader>tq :tabclose<cr>
 noremap <silent> <leader>tn :tabnext<cr>
 noremap <silent> <leader>tp :tabprev<cr>
 noremap <silent> <leader>to :tabonly<cr>
-" tab select Alt-N
+# tab select Alt-N
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>
 noremap <silent><m-3> :tabn 3<cr>
@@ -50,7 +51,7 @@ inoremap <silent><m-7> <ESC>:tabn 7<cr>
 inoremap <silent><m-8> <ESC>:tabn 8<cr>
 inoremap <silent><m-9> <ESC>:tabn 9<cr>
 inoremap <silent><m-0> <ESC>:tabn 10<cr>
-" tab select <Leader>-N
+# tab select <Leader>-N
 noremap <silent><leader>1 1gt<cr>
 noremap <silent><leader>2 2gt<cr>
 noremap <silent><leader>3 3gt<cr>
@@ -62,7 +63,7 @@ noremap <silent><leader>8 8gt<cr>
 noremap <silent><leader>9 9gt<cr>
 noremap <silent><leader>0 10gt<cr>
 
-" window switch
+# window switch
 noremap <TAB>h <C-w>h
 noremap <TAB>l <C-w>l
 noremap <TAB>j <C-w>j
@@ -72,80 +73,82 @@ inoremap <TAB>l <esc><C-w>l
 inoremap <TAB>j <esc><C-w>j
 inoremap <TAB>k <esc><C-w>k
 
-" window resize
+# window resize
 nnoremap <Up> <C-w>+
 nnoremap <Down> <C-w>-
 nnoremap <Left> <C-w><
 nnoremap <Right> <C-w>>
 
-" text edit
+# text edit
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap Y y$
 
-" text search
-" search visual content, escape special char
+# text search
+# search visual content, escape special char
 vnoremap <silent> //    y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 
-"vista tag view(autoload)
+#vista tag view(autoload)
 nnoremap <silent> <leader>v :Vista!!<cr>
 
-"nerdtree toggle(autoload)
+#nerdtree toggle(autoload)
 nnoremap <silent> <leader>e :NERDTreeToggle<cr>
 
-"undotree toggle
+#undotree toggle
 nnoremap <silent> <leader>u :UndotreeToggle<cr>
 
-" vim-preview {{{1
-"
-" scroll half page
+# vim-preview {{{1
+#
+# scroll half page
 nnoremap <m-u> :PreviewScroll -1<cr>
 nnoremap <m-d> :PreviewScroll +1<cr>
 inoremap <m-u> <c-\><c-o>:PreviewScroll -1<cr>
 inoremap <m-d> <c-\><c-o>:PreviewScroll +1<cr>
-" quickfix preview
+# quickfix preview
 autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
 autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
-"}}}
+#}}}
 
-"----------------------------------------------------------------------
-" <F5> exec file by filetype, output to quickfix window
-"----------------------------------------------------------------------
-nnoremap <silent> <F5> :call ExecuteFile()<cr>
-function! ExecuteFile()
-    let cmd = ''
+#----------------------------------------------------------------------
+# exec file by filetype, output to quickfix window
+#----------------------------------------------------------------------
+nnoremap <silent> <F5> <ScriptCmd>ExecuteFile()<cr>
+
+command! Run ExecuteFile()
+
+def ExecuteFile()
+    var cmd = ''
     if index(['c', 'cpp', 'rs'], &ft) >= 0
-        let cmd = '"$(VIM_FILEDIR)/$(VIM_FILENOEXT)"'
+        cmd = '"$(VIM_FILEDIR)/$(VIM_FILENOEXT)"'
     elseif &ft == 'go'
-        let cmd = 'go run "$(VIM_FILEPATH)"'
+        cmd = 'go run "$(VIM_FILEPATH)"'
     elseif &ft == 'python'
-        let $PYTHONUNBUFFERED=1
-        let cmd = 'python "$(VIM_FILEPATH)"'
+        cmd = 'python "$(VIM_FILEPATH)"'
     elseif &ft == 'javascript'
-        let cmd = 'node "$(VIM_FILEPATH)"'
+        cmd = 'node "$(VIM_FILEPATH)"'
     elseif &ft == 'perl'
-        let cmd = 'perl "$(VIM_FILEPATH)"'
+        cmd = 'perl "$(VIM_FILEPATH)"'
     elseif &ft == 'ruby'
-        let cmd = 'ruby "$(VIM_FILEPATH)"'
+        cmd = 'ruby "$(VIM_FILEPATH)"'
     elseif &ft == 'php'
-        let cmd = 'php "$(VIM_FILEPATH)"'
+        cmd = 'php "$(VIM_FILEPATH)"'
     elseif &ft == 'lua'
-        let cmd = 'lua "$(VIM_FILEPATH)"'
+        cmd = 'lua "$(VIM_FILEPATH)"'
     elseif &ft == 'zsh'
-        let cmd = 'zsh "$(VIM_FILEPATH)"'
+        cmd = 'zsh "$(VIM_FILEPATH)"'
     elseif &ft == 'ps1'
-        let cmd = 'powershell -file "$(VIM_FILEPATH)"'
+        cmd = 'powershell -file "$(VIM_FILEPATH)"'
     elseif &ft == 'vbs'
-        let cmd = 'cscript -nologo "$(VIM_FILEPATH)"'
+        cmd = 'cscript -nologo "$(VIM_FILEPATH)"'
     elseif &ft == 'sh'
-        let cmd = 'bash "$(VIM_FILEPATH)"'
+        cmd = 'bash "$(VIM_FILEPATH)"'
     else
         return
     endif
 
     if has('win32') || has('win64')
-        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=4 '. cmd
+        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=4 ' .. cmd
     else
-        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=0 '. cmd
+        exec 'AsyncRun -cwd=$(VIM_FILEDIR) -raw -save=2 -mode=0 ' .. cmd
     endif
-endfunc
+enddef
