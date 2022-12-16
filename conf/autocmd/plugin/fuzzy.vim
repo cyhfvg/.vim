@@ -25,7 +25,9 @@ g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C
 # return tracked files when a git repo
 def FzfOmniFiles()
     var is_git = system('git rev-parse --git-dir')
-    if v:shell_error
+
+    # not a git repo
+    if v:shell_error != 0
         :FzfFiles
     else
         :FzfGFiles --exclude-standard
