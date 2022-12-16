@@ -12,6 +12,8 @@ set showtabline=1
 " show special chars
 set list
 set showcmd
+" set cmdheight for 'have no `Press ENTER or type command to continue` msg'
+set cmdheight=2
 " show new window in right
 set splitright
 
@@ -28,6 +30,10 @@ set guioptions-=b
 " set shortmessage
 set shortmess=atI
 set noshowmode
+set background=dark
+
+packadd! onedark.vim
+colorscheme onedark
 
 " color setting ----- ----- {{{1
 " spell error color

@@ -16,6 +16,7 @@ if executable('node')
   let g:coc_global_extensions += ['coc-json']
   "let g:coc_global_extensions += ['coc-pairs']
   let g:coc_global_extensions += ['coc-pyright']
+  let g:coc_global_extensions += ['coc-powershell']
   let g:coc_global_extensions += ['coc-syntax']
   let g:coc_global_extensions += ['coc-vimlsp']
   let g:coc_global_extensions += ['coc-word']
