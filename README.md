@@ -44,6 +44,7 @@ git submodule update --recursive --remote
 - [fzf.vim](https://github.com/junegunn/fzf.vim)
 - [fzf](https://github.com/junegunn/fzf)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
+- [onedark.vim](https://github.com/joshdick/onedark.vim)
 - [tabular](https://github.com/godlygeek/tabular)
 - [undotree](https://github.com/mbbill/undotree)
 - [vim-abolish](https://github.com/tpope/vim-abolish)
