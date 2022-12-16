@@ -1,7 +1,8 @@
+vim9script
 if get(s:, 'loaded', v:false)
-  finish
+    finish
 else
-  let s:loaded = v:true
+    var loaded = v:true
 endif
 
 packadd vim-fugitive

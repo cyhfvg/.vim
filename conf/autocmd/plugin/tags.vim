@@ -1,38 +1,39 @@
+vim9script
 if get(s:, 'loaded', v:false)
-  finish
+    finish
 else
-  let s:loaded = v:true
+    var loaded = v:true
 endif
 
-let g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
+g:gutentags_project_root = ['.root', '.svn', '.git', '.project']
 
-" set tags files' name
-let g:gutentags_ctags_tagfile = '.tags'
+# set tags files' name
+g:gutentags_ctags_tagfile = '.tags'
 
-" set tags directory
-let s:tag_path = expand(g:vimfilehome .'/'.'dirs/tagdir')
-if !isdirectory(s:tag_path)
-  call mkdir(s:tag_path, "p", 0755)
+# set tags directory
+var tag_path = expand(g:vimfilehome .. '/' .. 'dirs/tagdir')
+if !isdirectory(tag_path)
+  call mkdir(tag_path, "p", 0755)
 endif
-let g:gutentags_cache_dir = expand(s:tag_path)
+g:gutentags_cache_dir = expand(tag_path)
 
-let g:gutentags_modules = []
-" catgs
-let g:gutentags_modules += ['ctags']
-" gtags
+g:gutentags_modules = []
+# catgs
+g:gutentags_modules += ['ctags']
+# gtags
 if executable('gtags') && executable('gtags-cscope')
-  let g:gutentags_modules += ['gtags_cscope']
+    g:gutentags_modules += ['gtags_cscope']
 endif
 
-" ctags parameters
-let g:gutentags_ctags_extra_args = []
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+# ctags parameters
+g:gutentags_ctags_extra_args = []
+g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
-" disable gutentags autolink gtags database
-let g:gutentags_auto_add_gtags_cscope = 0
+# disable gutentags autolink gtags database
+g:gutentags_auto_add_gtags_cscope = 0
 
 packadd vim-gutentags
 packadd vista.vim
-"-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------

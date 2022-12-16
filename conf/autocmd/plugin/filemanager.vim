@@ -1,11 +1,12 @@
+vim9script
 if get(s:, 'loaded', v:false)
-  finish
+    finish
 else
-  let s:loaded = v:true
+    var loaded = v:true
 endif
 
-let g:NERDTreeMinimalUI = 1
-let g:NERDTreeDirArrows = 1
-let g:NERDTreeHijackNetrw = 0
+g:NERDTreeMinimalUI = 1
+g:NERDTreeDirArrows = 1
+g:NERDTreeHijackNetrw = 0
 
 packadd nerdtree
