@@ -3,6 +3,10 @@ vim9script
 # init-tabsize.vim
 #================================================================================
 
+# set modeline
+set modeline
+set modelines=2
+
 # indent width
 set shiftwidth=4
 # tab = <n> spaces
