@@ -76,16 +76,6 @@ else
     set t_Co=256
 endif
 
-# terminal window style
-if has('terminal') && exists(':terminal') == 2
-    if exists('##TerminalOpen')
-        augroup VimUnixTerminalGroup
-            au!
-            au TerminalOpen * setlocal nonumber signcolumn=no
-        augroup END
-    endif
-endif
-
 # quickfix window style
 augroup VimInitStyle
     au!
