@@ -1,0 +1,4 @@
+{
+    // coc-powershell
+    "powershell.integratedConsole.showOnStartup": false
+}
