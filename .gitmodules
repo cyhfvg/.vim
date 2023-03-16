@@ -67,3 +67,6 @@
 [submodule "pack/mypackage/start/coc.nvim"]
 	path = pack/mypackage/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/mypackage/opt/onedark.vim"]
+	path = pack/mypackage/opt/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git

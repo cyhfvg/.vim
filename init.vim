@@ -30,3 +30,4 @@ LoadConfig conf/init-plugins.vim
 LoadConfig conf/init-style.vim
 LoadConfig conf/init-keymaps.vim
 LoadConfig conf/init-macros.vim
+LoadConfig conf/init-command.vim
