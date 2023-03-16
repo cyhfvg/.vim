@@ -67,7 +67,7 @@ hi! PmenuSel guibg=gray guifg=brown ctermbg=brown ctermfg=gray
 
 # true color
 if (has("nvim"))
-    $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 endif
 if has("termguicolors")
     # true color
