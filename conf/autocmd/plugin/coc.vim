@@ -23,6 +23,7 @@ if executable('node')
     g:coc_global_extensions += ['coc-word']
     g:coc_global_extensions += ['coc-sh']
     g:coc_global_extensions += ['coc-markdownlint']
+    g:coc_global_extensions += ['coc-rust-analyzer']
     #-------------------------------------------------------------------------------
 
     # tips lazy time
