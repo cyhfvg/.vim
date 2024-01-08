@@ -1,4 +1,6 @@
 {
     // coc-powershell
-    "powershell.integratedConsole.showOnStartup": false
+    "powershell.integratedConsole.showOnStartup": false,
+    // coc-rust-analyzer
+    "rust-analyzer.server.extraEnv": { "RUSTUP_TOOLCHAIN": "1.74.1" }
 }
