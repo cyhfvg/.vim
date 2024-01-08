@@ -120,6 +120,8 @@ def ExecuteFile()
     var cmd = ''
     if index(['c', 'cpp', 'rs'], &ft) >= 0
         cmd = '"$(VIM_FILEDIR)/$(VIM_FILENOEXT)"'
+    elseif &ft == 'rust'
+        cmd = 'cargo run'
     elseif &ft == 'go'
         cmd = 'go run "$(VIM_FILEPATH)"'
     elseif &ft == 'python'
