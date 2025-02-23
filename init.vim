@@ -3,10 +3,10 @@ vim9script
 # init.vim - initialize config
 # ==============================================================================
 
-if get(g:, 'my_vim_conf_loaded', v:false)
+if get(s:, 'loaded', v:false)
   finish
 else
-  g:my_vim_conf_loaded = v:true
+  var loaded = v:true
 endif
 
 # config file's home directory(init.vim's parent directory)
