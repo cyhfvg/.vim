@@ -16,6 +16,12 @@ cd .vim/
 git submodule update --init --recursive
 ```
 
+```bash
+# 为start级别插件,coc 安装依赖
+cd pack/mypackage/start/coc.nvim/
+npm ci
+```
+
 ### 添加插件
 
 ```bash
