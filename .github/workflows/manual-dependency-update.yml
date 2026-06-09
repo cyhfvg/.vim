@@ -1,0 +1,46 @@
+name: Manual dependency update
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-git-submodules:
+    name: Update git submodules
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Update git submodules
+        run: git submodule update --init --recursive --remote
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          UPDATE_BRANCH: chore/manual-dependency-update
+        run: |
+          if git diff --quiet; then
+            echo "No submodule updates found."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$UPDATE_BRANCH"
+          git add .
+          git commit -m "chore: update git submodules"
+          git push --force-with-lease origin "$UPDATE_BRANCH"
+
+          gh pr view "$UPDATE_BRANCH" >/dev/null 2>&1 || gh pr create \
+            --base "$GITHUB_REF_NAME" \
+            --head "$UPDATE_BRANCH" \
+            --title "chore: update git submodules" \
+            --body "Manual dependency update triggered from GitHub Actions."
