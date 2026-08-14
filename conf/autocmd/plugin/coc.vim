@@ -19,11 +19,11 @@ if executable('node')
     g:coc_global_extensions += ['coc-pyright']
     g:coc_global_extensions += ['coc-powershell']
     g:coc_global_extensions += ['coc-syntax']
-    g:coc_global_extensions += ['coc-vimlsp']
+    #g:coc_global_extensions += ['coc-vimlsp']
     g:coc_global_extensions += ['coc-word']
-    g:coc_global_extensions += ['coc-sh']
+    #g:coc_global_extensions += ['coc-sh']
     g:coc_global_extensions += ['coc-markdownlint']
-    g:coc_global_extensions += ['coc-rust-analyzer']
+    #g:coc_global_extensions += ['coc-rust-analyzer']
     #-------------------------------------------------------------------------------
 
     # tips lazy time
